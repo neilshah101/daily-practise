@@ -50,13 +50,3 @@ print (bubble_sort_descending(numbers))
 
 
 
-# num_len = len(numbers)
-
-# for i in numbers(0, num_len-1):
-#     if numbers[i] > numbers[i+1]:
-        
-        
-        
-        
-#         # numbers[i] ,numbers[i+1] = numbers[i+1] , number[i]
-#         # print (number(i))
