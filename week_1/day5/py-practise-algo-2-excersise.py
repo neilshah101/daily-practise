@@ -10,3 +10,11 @@ def power(first,second):
 
 
 print (power(5,4))
+
+
+# first =2
+# second=6
+
+# for i in (first , second):
+#     i = first ** second
+#     print (i)
