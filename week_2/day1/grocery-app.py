@@ -4,10 +4,25 @@ class Store:
     self.name = name 
     self.address = address 
     self.items = [] 
-print("Enter 1 to add a store: ")
-print("Enter 2 to add item to a store: ")
-print("Enter q to quit: ")
+
+class Item:
+    def __init__(self, title, price, quantity):
+        self.title = title
+        self.price = price
+        self.quantity = quantity
+
+
+def menu():
+  print("Enter 1 to add a store: ")
+  print("Enter 2 to add item to a store: ")
+  print("Enter q to quit: ")
+
+def display_store():
+    for i in range(0,len(stores)):
+        print (f'{(i)+1} - {stores[i]}')
+
 while True: 
+  menu()
   choice = input("Enter choice: ")
   if choice == "1":
      name = input("Enter store name: ")
@@ -16,8 +31,9 @@ while True:
      stores.append(store)
 
   elif choice == "2":
-      for i in stores : 
-          print (f'{i +1} - {store.name}')
+    #   for i in stores : 
+    #       print (f'{i+1} - {i.stores}')
+      display_store()
       store_select = int(input("enter the no. of store  to add grocery list item: "))
       if store_select in range(0,len(store.name)):
           print ("hahahahah")
@@ -26,6 +42,8 @@ while True:
 
   elif choice =="q":
        break
+
+    
 
 
 
