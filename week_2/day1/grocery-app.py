@@ -1,53 +1,135 @@
-stores = []
-class Store: 
-  def __init__(self, name, address): 
-    self.name = name 
-    self.address = address 
-    self.items = [] 
 
-class Item:
-    def __init__(self, title, price, quantity):
-        self.title = title
-        self.price = price
-        self.quantity = quantity
+# Store Model 
 
+stores = [] 
 
-def menu():
-  print("Enter 1 to add a store: ")
-  print("Enter 2 to add item to a store: ")
-  print("Enter q to quit: ")
+class Store:
+    def __init__(self, name, address):
+        self.name = name
+        self.address = address
+        self.items = []
+    #def __repr__(self):
+    #    return f"{self.name} - {self.address}"
 
-def display_store():
-    for i in range(0,len(stores)):
-        print (f'{(i)+1} - {stores[i]}')
+class Item: 
+    def __init__(self, name, price): 
+        self.name = name 
+        self.price = price 
+
+print("1. Add Store: ")
+print("2. Add Item to Store: ")
+print("3. View All")
+print("q. Quit")
 
 while True: 
-  menu()
-  choice = input("Enter choice: ")
-  if choice == "1":
-     name = input("Enter store name: ")
-     address = input("Enter store address: ")
-     store = Store(name, address)
-     stores.append(store)
+    choice = input("Enter choice: ")
+    if choice == "1": 
+        store_name = input("Enter store name: ")
+        store_address = input("Enter store address: ")
+        store = Store(store_name, store_address)
+        stores.append(store)
 
-  elif choice == "2":
-    #   for i in stores : 
-    #       print (f'{i+1} - {i.stores}')
-      display_store()
-      store_select = int(input("enter the no. of store  to add grocery list item: "))
-      if store_select in range(0,len(store.name)):
-          print ("hahahahah")
-      else :
-            print("nanananana")
+        
+    elif choice == "2": 
+        for index in range(0, len(stores)): 
+            store = stores[index]
+            print(f"{index + 1} {store.name} - {store.address}")
 
-  elif choice =="q":
-       break
+        store_index = int(input("Choose store to add items: "))
+        store = stores[store_index - 1]
+        item_name = input("Enter item name: ")
+        item_price = float(input("Enter price: ")) 
+        item = Item(item_name, item_price) 
+        # add item to the store 
+        store.items.append(item)
 
     
+    elif choice == "3": 
+        for store in stores: 
+            print(f"{store.name} - {store.address}")
+            for item in store.items: 
+                print(f"{item.name} - ${item.price}")
+        
+    
+    elif choice == "q": 
+        break 
+
+
+
+#Stores 
+#  - 0 Store 
+#       - name 
+#       - address
+#       - items 
+#           0 - Item 
+#                 - name 
+#                 - price 
+
+
+
+# stores = []
+# class Store: 
+#   def __init__(self, name, address): 
+#     self.name = name 
+#     self.address = address 
+#     self.items = [] 
+
+# class Item:
+#     def __init__(self, title, price, quantity):
+#         self.title = title
+#         self.price = price
+#         self.quantity = quantity
+
+
+# def menu():
+#   print("Enter 1 to add a store: ")
+#   print("Enter 2 to add item to a store: ")
+#   print("Enter 3 to view  store: ")
+#   print("Enter q to quit: ")
+
+# def display_store():
+#     for store in stores:
+#         print (f'{store.name} - {store.address}')
+#         for item in store.items: 
+#           print(f"{item.name} - ${item.price}")
+
+# while True: 
+#   menu()
+#   choice = input("Enter choice: ")
+#   if choice == "1":
+#      name = input("Enter store name: ")
+#      address = input("Enter store address: ")
+#      store = Store(name, address)
+#      stores.append(store)
+
+#   elif choice == "3":
+#       display_store()
+
+#   elif choice =="2":
+#       for index in range(0,len(stores)):
+#           print(f'{index+1}  {store.name} - {store.address}')
+#       store_index =int(input("choose storeto add items: "))
+#       store = stores[store_index - 1]
+#       item_name = input("Enter item name: ")
+#       item_price = float(input("Enter price: ")) 
+#       item_quantity =float(input("enter the quantity: "))
+#       item = Item(item_name, item_price, item_quantity) 
+#         # add item to the store 
+#       store.items.append(item)
+
+#     #   store_select = int(input("enter the no. of store  to add grocery list item: "))
+#     #   if store_select in range(0,len(store.name)):
 
 
 
 
+#     #   else :
+#     #         print("nanananana")
+
+#   elif choice =="q":
+#        break
+
+    
 
 
 
