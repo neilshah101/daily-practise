@@ -16,7 +16,7 @@ while True:
      stores.append(store)
 
   elif choice == "2":
-      for i in range(0,len(stores)) : 
+      for i in stores : 
           print (f'{i +1} - {store.name}')
       store_select = int(input("enter the no. of store  to add grocery list item: "))
       if store_select in range(0,len(store.name)):
