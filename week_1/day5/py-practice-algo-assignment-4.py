@@ -14,17 +14,19 @@ def fibonaci_numbers(n):
            fn.append(i)  
            print(fn)
 
+           for k,v in fn:
+               if v%7 == 0:
+                   print (v)
+
 print (fibonaci_numbers(30))
 
-def mult_seven():
-    for k in fibonaci_numbers():
-        mult_seven=[]
-        if k%7 == 0:
-            mult_seven.append[k]
-            print(mult_seven)
-    return
+# def mult_seven():
+#     for k ,v in fibonaci_numbers():
+#         if v%7 == 0:
+#             print(v)
+#     return
 
-print (mult_seven())
+
 
 
 
