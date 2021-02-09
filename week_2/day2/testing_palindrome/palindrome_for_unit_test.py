@@ -3,16 +3,22 @@ class Palindrome:
         pass
 
     def word_staraight_check(self,word):
-        word =""
-        for i in range(0,len(word)):
-           word += user_input[i]
-        return word
+        new_word = ""
+        for r in range(len(word) - 1, -1, -1):
+         new_word += word[r]
+        # for i in range(0,len(word)):
+        #   new_word += word[i]
+        # return new_word
+        if new_word == word :
+            return True
+        else:
+            return False
 
-    def rev_word_checker(self,rev_word):
-        rev_word =""
-        for r in range(len(rev_word) - 1, -1, -1):
-         rev_word += user_input[r]
-        return rev_word
+    # def rev_word_checker(self,rev_word):
+    #     rev_word = "mom"
+    #     for r in range(len(rev_word) - 1, -1, -1):
+    #      rev_word += user_input[r]
+    #     return rev_word
 
 
 
