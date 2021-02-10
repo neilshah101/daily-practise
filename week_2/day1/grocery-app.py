@@ -1,6 +1,4 @@
 
-# Store Model 
-
 stores = [] 
 
 class Store:
@@ -18,7 +16,9 @@ class Item:
 
 print("1. Add Store: ")
 print("2. Add Item to Store: ")
-print("3. View All")
+print("3. View All stores and all list: ")
+print("4. Delete The Store: ")
+print("4. Delete The : ")
 print("q. Quit")
 
 while True: 
@@ -50,7 +50,26 @@ while True:
             for item in store.items: 
                 print(f"{item.name} - ${item.price}")
         
-    
+    elif choice =="4":
+        for index in range(0, len(stores)): 
+            store = stores[index]
+            print(f"{index + 1} {store.name} - {store.address}")
+        delete_store_index = int(input("choose a store you want to  delete: "))
+        del stores[delete_store_index - 1]
+
+    elif choice =="5":
+        for store in stores: 
+            print(f"{store.name} - {store.address}")
+            for item in store.items: 
+                item_index = 0
+                print(f"{item_index + 1} - {item.name} - ${item.price}")
+        del_item = int(input("enter item name to delet: "))  #ValueError: invalid literal for int() with base 10: 'walamart'
+        for store in stores:
+            print(f"{store.name} - {store.address}")
+            for item in store.items: 
+                item_index = 0
+                print(item[item_index + del_item])
+        
     elif choice == "q": 
         break 
 
