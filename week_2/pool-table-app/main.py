@@ -1,35 +1,10 @@
-import json
-from datetime import datetime 
+# import json
+# from datetime import datetime 
+from pool_table_class import *
 
 
 pool_tables = []
 json_tables = []
-
-# creating a pooltable class
-class PoolTable:
-    def __init__(self, table_number):
-        self.table_number = table_number
-        self.is_occupied = False
-        self.start_time = None
-        self.end_time = None
-    
-    def check_out(self):
-        self.is_occupied = True
-        self.start_time = datetime.now().strftime("%m-%d-%y  %H:%M")
-        self.a = datetime.now()
-    def check_in(self):
-        self.is_occupied = False
-        self.end_time = datetime.now().strftime("%m-%d-%y  %H:%M")
-        self.b = datetime.now()
-
-    def time_played(self):
-        if self.start_time == None:
-            return 
-        elif self.end_time == None:
-            return 
-        else:
-            return self.b - self.a 
-
 
 # creating the tables       
 for index in range(1,13):
@@ -75,11 +50,14 @@ while True:
         print ("\n")
         table_checkin_index = int(input("ENTER TABLE NO. TO CHECK-IN: "))
         table = pool_tables[table_checkin_index - 1]
-        table.check_in()        
+        table.check_in()  
+        json_table = {"table number": table.table_number,  "checkout time is" : table.start_time, "checkin time is" :table.end_time, "TOTALTIME PLAYED" : table.time_played() }
+        json_tables.append(json_table)
+        # for json_table in pool_tables:
+        #    json_table = {"table number": json_table.table_number,  "checkout time is" : json_table.start_time, "checkin time is" :json_table.end_time, "TOTALTIME PLAYED" : json_table.time_played() }
+        #    json_tables.append(json_table)      
         with open(f"{datetime.now().strftime('%m-%d-%y')}.json", "w") as file_object:
-          pool_table = {"table number": pool_table.table_number,  "checkout time is" : pool_table.start_time, "checkin time is" :pool_table.end_time, "TOTALTIME PLAYED" : pool_table.time_played() }
-          pool_tables.append(pool_table)
-          json.dump(pool_tables, file_object)
+           json.dump(json_tables, file_object, cls = DateTimeEncoder)
     
     elif choice == "q":
         break
