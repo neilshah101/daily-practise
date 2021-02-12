@@ -16,7 +16,7 @@ for index in range(1,13):
 def display_menu():
     print ("********************************")
     print("""
-      welcome to the pool zone::::    
+      :::: WELCOME TO POOL ZONE::::    
       1.DISPLAY ALL TABLES
       2.CHECKOUT ALL TABLES
       3.CHECK IN A TABLE 
@@ -51,7 +51,7 @@ while True:
         table_checkin_index = int(input("ENTER TABLE NO. TO CHECK-IN: "))
         table = pool_tables[table_checkin_index - 1]
         table.check_in()  
-        json_table = {"table number": table.table_number,  "checkout time is" : table.start_time, "checkin time is" :table.end_time, "TOTALTIME PLAYED" : table.time_played() }
+        json_table = {"TABLE NUMBER": table.table_number,  "CHECK-OUT TIME IS " : table.start_time, "CHECK-IN TIME IS" :table.end_time, "TOTALTIME PLAYED" : table.time_played() }
         json_tables.append(json_table)     
         with open(f"{datetime.now().strftime('%m-%d-%y')}.json", "w") as file_object:
            json.dump(json_tables, file_object, cls = DateTimeEncoder)
@@ -63,20 +63,3 @@ while True:
         print("\n")
         print ("************select the correct option************")
         print ("\n")
-        
-    
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
