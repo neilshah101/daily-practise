@@ -52,10 +52,7 @@ while True:
         table = pool_tables[table_checkin_index - 1]
         table.check_in()  
         json_table = {"table number": table.table_number,  "checkout time is" : table.start_time, "checkin time is" :table.end_time, "TOTALTIME PLAYED" : table.time_played() }
-        json_tables.append(json_table)
-        # for json_table in pool_tables:
-        #    json_table = {"table number": json_table.table_number,  "checkout time is" : json_table.start_time, "checkin time is" :json_table.end_time, "TOTALTIME PLAYED" : json_table.time_played() }
-        #    json_tables.append(json_table)      
+        json_tables.append(json_table)     
         with open(f"{datetime.now().strftime('%m-%d-%y')}.json", "w") as file_object:
            json.dump(json_tables, file_object, cls = DateTimeEncoder)
     
