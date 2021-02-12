@@ -68,7 +68,7 @@ while True:
         print ("\n")
         table_checkout_index = int(input("ENTER TABLE NO. TO CHECK-OUT: "))
         table = pool_tables[table_checkout_index - 1]
-        table.check_out()#you can addif condition here
+        table.check_out()
 
     elif choice == "3":
         display_tables()
@@ -76,10 +76,10 @@ while True:
         table_checkin_index = int(input("ENTER TABLE NO. TO CHECK-IN: "))
         table = pool_tables[table_checkin_index - 1]
         table.check_in()        
-        # with open(f"{datetime.now().strftime('%m-%d-%y')}.json", "w") as file_object:
-        #   pool_table = {"table number": pool_table.table_number,  "checkout time is" : pool_table.start_time, "checkin time is" :pool_table.end_time, "TOTALTIME PLAYED" : pool_table.time_played() }
-        #   json_tables.append(pool_table)
-        #   json.dump(json_tables, file_object)
+        with open(f"{datetime.now().strftime('%m-%d-%y')}.json", "w") as file_object:
+          pool_table = {"table number": pool_table.table_number,  "checkout time is" : pool_table.start_time, "checkin time is" :pool_table.end_time, "TOTALTIME PLAYED" : pool_table.time_played() }
+          json_tables.append(pool_table)
+          json.dump(json_tables, file_object)
     
     elif choice == "q":
         break
@@ -282,56 +282,3 @@ while True:
 
 
 
-
-
-# class PoolTable: 
-#     def __init__(self, table_number): 
-#         self.table_number = table_number
-#         self.is_occupied = False 
-#         self.start_time = None 
-#         self.end_time = None 
-#     def checkout(self): 
-#         # check if the table is available 
-#         # if available then checkout out the table to the customer 
-#         self.is_occupied = True 
-#         self.start_time = datetime.datetime.now() 
-#     def checkin(self): 
-#         self.is_occupied = False 
-#         self.end_time = datetime.datetime.now() 
-#     def get_time_played(self): 
-#         return self.end_time - self.start_time # not working code 
-
-
-
-
-
-
-
-
-
-
-
-
-# def checkout(self):
-#         if self.occupied == True:
-#             print("")
-#             input(
-#                 f" !!Table {self.number} is currently occupied!! Please choose another. Hit RETURN.")
-#         else:
-#             self.occupied = True
-#             self.start_time = datetime.now()
-#             self.end_time = datetime.now()
-#             self.time_played = self.end_time - self.start_time
-
-#     def checkin(self):
-#         if self.occupied == False:
-#             print("")
-#             input(
-#                 " !!This table is currently available!! Please choose another table. Hit RETURN.")
-#             return False
-#         else:
-#             self.occupied = False
-#             self.end_time = datetime.now()
-#             self.time_played = self.end_time - self.start_time
-#             # self.start_time = ""
-#             return True
