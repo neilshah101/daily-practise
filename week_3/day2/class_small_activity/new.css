@@ -1,0 +1,17 @@
+h1 {
+    font-size: 40px ;
+    text-decoration: 1px solid rgb(224, 46, 46) underline;
+}
+
+p {
+     background-color: yellow;
+
+}
+
+.cold {
+    background-color:red;
+}
+
+#cold_houston {
+    background-color:blue;
+}
