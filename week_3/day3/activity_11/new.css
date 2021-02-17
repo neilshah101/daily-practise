@@ -1,0 +1,15 @@
+.container {
+    display:grid;
+    grid-template-columns: 1fr 50px 1fr 50px 100px;
+    grid-template-rows: repeat(2,1fr);
+    gap: 5px;
+}
+.container > .item {
+    background-color:yellow;
+    font-size: 20px;
+    text-align: center;
+}
+.container {
+    background-color:skyblue;
+    width: 270px;
+}

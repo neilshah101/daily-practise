@@ -1,0 +1,46 @@
+.container {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: "header header header"
+       "sidebar content content"
+       "footer footer footer"
+     
+}
+.container {
+    background-color:skyblue;
+    width: 500px;
+}
+
+.container > .top {
+    background-color:red;
+    grid-area : header;
+    text-align: center;
+    
+}
+
+.container > .sidebar {
+    background-color: yellow;
+    grid-area : sidebar;
+    text-align: center;
+}
+
+.container > .main {
+    background-color: aquamarine;
+    grid-area: content;
+    text-align: center;
+}
+.container > .bottom {
+    background-color:rgb(101, 36, 187);
+    grid-area : footer;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width : 100%;
+    gap: 5px;
+    background-color:black;
+    font-size: 30px;
+    margin: 0px;
+}

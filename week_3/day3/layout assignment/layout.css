@@ -1,0 +1,79 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5 ,1fr);
+    grid-template-areas: "header header header header"
+        "banner banner banner banner"
+        "content1 content1 content2 content2"
+        "content3 content3 content4 content4"
+        "footer footer footer footer";
+}
+
+.container > .header {
+    grid-area: header;
+    text-align: center;
+    font-size: 80px;
+    color: black
+}
+.container > .bann_content {
+    background-color:rgb(32, 112, 32);
+    grid-area: banner;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(236, 236, 152);
+    margin :0 5px 0 5px;
+
+}
+
+.container > .bann_sub_content1 {
+    background-color:rgb(32, 112, 32);
+    grid-area: content1;
+    text-align: center;
+    justify-text: center;
+    font-size: 40px;
+    color: rgb(236, 236, 152);
+    margin :5px 5px 5px 5px;
+
+}
+.container > .bann_sub_content2 {
+    background-color:rgb(32, 112, 32);
+    grid-area: content2;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(236, 236, 152);
+    margin :5px 5px 5px 0;
+
+}
+.container > .bann_sub_content3 {
+    background-color:rgb(32, 112, 32);
+    grid-area: content3;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(236, 236, 152);
+    margin :5px 5px 5px 5px;
+
+}
+.container > .bann_sub_content4 {
+    background-color:rgb(32, 112, 32);
+    grid-area: content4;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(236, 236, 152);
+    margin :5px 5px 5px 0;
+
+}
+.container > .footer {
+    background-color:rgb(32, 112, 32);
+    grid-area: footer;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(236, 236, 152);
+    margin :5px 5px 5px 5px;
+
+}
+.container {
+       background-color:rgb(155, 215, 218);
+       height: 60vh;
+       font-size: 40px;
+       color: rgb(236, 236, 152);
+}
