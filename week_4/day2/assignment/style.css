@@ -1,0 +1,58 @@
+body {
+    background-color: gradient;
+}
+
+#overview {
+    display: flex;
+    background-color: beige;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.enttask {
+    font-size: 30px;
+    animation: glow 1s infinite;
+    text-decoration: underline 5px;
+}
+
+#tasktextbox {
+    width: 600px;
+    height: 50px;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    text-align: center;
+    font-size: 30px;
+}
+
+#addbtn {
+    width: 60px;
+    height: 50px;
+    border: none;
+    transition: 0.3s;
+    background-color: white;
+    animation: glow 1s infinite;
+    transition: 0.5s;
+    font-size: 24px;
+}
+
+h2 {
+    text-decoration: underline 5px;
+    width: 200px;
+    height: auto;
+    transition: 0.3s;
+    background-color: white;
+    animation: glow 1s infinite;
+    transition: 0.5s;
+    font-size: 24px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168);
+    }
+    50% {
+        box-shadow: 5px 5px 20px rgb(81, 224, 210), -5px -5px 20px rgb(81, 224, 210)
+    }
+    100% {
+        box-shadow: 5px 5px 20px rgb(93, 52, 168), -5px -5px 20px rgb(93, 52, 168)
+    }
+}
