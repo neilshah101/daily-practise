@@ -1,18 +1,33 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+    text-decoration: underline 5px solid black;
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin: 0;
+}
+
 body {
-    background-color: gradient;
+    background-color: #5cdb95;
 }
 
 #overview {
     display: flex;
-    background-color: beige;
+    background-color: #5cdb95;
     align-items: center;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 5px solid black;
 }
 
 .enttask {
     font-size: 30px;
-    animation: glow 1s infinite;
+    /* animation: glow 5s infinite; */
     text-decoration: underline 5px;
+    color: #1604a2c7;
+    background-color: #5cdb95;
 }
 
 #tasktextbox {
@@ -24,25 +39,44 @@ body {
 }
 
 #addbtn {
-    width: 60px;
+    width: 90px;
     height: 50px;
-    border: none;
     transition: 0.3s;
-    background-color: white;
-    animation: glow 1s infinite;
+    background-color: #5cdb95;
+    border: 3px solid black;
+    border-radius: 20%;
+    color: #1604a2c7;
     transition: 0.5s;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 h2 {
     text-decoration: underline 5px;
-    width: 200px;
+    width: 300px;
     height: auto;
     transition: 0.3s;
-    background-color: white;
-    animation: glow 1s infinite;
+    background-color: #5cdb95;
+    color: #1604a2c7;
     transition: 0.5s;
-    font-size: 24px;
+    font-size: 30px;
+}
+
+.task {
+    display: flex;
+    color: black;
+    background-color: #c8db5c;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    margin: 10px;
+    border: 3px solid black;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+
+.removebtn {
+    background-color: red;
 }
 
 @keyframes glow {

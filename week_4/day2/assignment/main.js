@@ -7,12 +7,14 @@ let completedtasklist = document.getElementById('completedtasklist');
 addbtn.addEventListener('click', function() {
     //creates a div to place the task
     let task = document.createElement("div");
+    task.className = "task"
     pendingtasklist.appendChild(task);
-    task.classname = "task"
+
 
     //creates the checkbox
     let taskitem = document.createElement("input");
     taskitem.setAttribute("type", "checkbox");
+    taskitem.className = "taskitem"
     task.appendChild(taskitem);
 
     //adds the task to the list
@@ -22,7 +24,8 @@ addbtn.addEventListener('click', function() {
 
     //adding remove button
     let removebtn = document.createElement("button")
-    removebtn.innerHTML = "Remove";
+    removebtn.innerHTML = "DELETE TASK";
+    removebtn.className = "removebtn"
     task.appendChild(removebtn);
     removebtn.addEventListener('click', function() {
         this.parentElement.remove()
