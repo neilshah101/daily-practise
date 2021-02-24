@@ -1,0 +1,73 @@
+body {
+    background-color: green;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 75px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    font-family: 'Ballet', cursive;
+    font-size: 75px;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 40px;
+    border-bottom: 3px solid;
+    font-family: 'Dancing Script', cursive;
+}
+
+.image {
+    height: 300px;
+    width: 400px;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+#titledescription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 1000px;
+}
+
+.title {
+    margin-left: 10px;
+    font-size: 30px;
+    text-decoration: 3px solid;
+    color: rgba(8, 51, 241, 0.897);
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.description {
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 25px;
+    width: 700px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.price {
+    margin: 10px 5px 0 0;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
