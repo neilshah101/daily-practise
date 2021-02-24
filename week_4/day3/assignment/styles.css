@@ -11,9 +11,11 @@ body {
 
 #menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Ballet', cursive;
     font-size: 75px;
+    border-bottom: 3px solid;
 }
 
 p {
@@ -35,12 +37,14 @@ h3 {
 
 .dishes {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 100px;
 }
 
 #titledescription {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin-top: 10px;
     width: 1000px;
