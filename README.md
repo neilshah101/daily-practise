@@ -2,7 +2,7 @@
 # week1-python
 # week2 -python
 # week3 - html & css
-# week3 - javascript
+# week4 - javascript
 
 
 # grocery store app -python
