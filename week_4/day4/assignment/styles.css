@@ -1,0 +1,27 @@
+#headerbanner {
+    display: flex;
+    justify-content: center;
+}
+
+#newscontainer {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
+    margin-top: 30px;
+    background-color: lightblue;
+}
+
+#sourcename {
+    font-size: 40px;
+    background-color: red;
+}
+
+.image {
+    width: 600px;
+    height: 400px;
+}
+
+.fonts {
+    font-size: 30px;
+    color: black;
+}
