@@ -1,0 +1,38 @@
+#moviename {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    column-gap: 30px;
+    row-gap: 30px;
+    border-style: underline 1px solid black;
+    margin-top: 60px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+#titlename {
+    font-size: 15px;
+}
+
+#moviesdetails1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 60px;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: 3px solid underline;
+}
