@@ -1,0 +1,50 @@
+#displaycoffeorders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    column-gap: 30px;
+    row-gap: 30px;
+    border-top: 5px solid black;
+    margin-top: 60px;
+}
+
+#coffeeorderlist {
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    background: rgb(107, 182, 157);
+    font-size: 20px;
+}
+
+#delbtn {
+    background: red;
+    font-size: 20px;
+}
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 80px;
+}
+
+#orderinput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body {
+    background: rgb(199, 199, 149);
+}
+
+input {
+    width: 300px;
+    font-size: 30px;
+}
+
+button {
+    width: 200px;
+    font-size: 30px;
+}
