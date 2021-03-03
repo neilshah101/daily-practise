@@ -14,22 +14,7 @@
     column-gap: 30px;
     row-gap: 30px;
     margin-top: 200px;
-    background: rgb(75, 204, 255);
-    margin-left: 500px;
-    margin-right: 500px;
-    border: 5px solid black;
 }
-
-
-/* #weatherinfo {
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    border: 3px solid black;
-} */
 
 #cityname {
     font-size: 40px;
