@@ -7,8 +7,6 @@ let emailsearchtextbox = document.getElementById("emailsearchtextbox")
 let ordersearch = document.getElementById("ordersearch")
 
 
-
-
 // gettting all the orders 
 
 const coffeorderurl = "https://troubled-peaceful-hell.glitch.me/orders"
@@ -42,8 +40,6 @@ request.addEventListener("load", function() {
 })
 request.open('GET', coffeorderurl)
 request.send()
-
-
 
 
 
@@ -105,13 +101,6 @@ ordersearch.addEventListener("click", function() {
     searchrequest.open('GET', searchorderurl)
     searchrequest.send()
 })
-
-
-
-
-
-
-
 
 
 // deleting the order
