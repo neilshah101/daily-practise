@@ -3,7 +3,13 @@ let coffeetypetextbox = document.getElementById("coffeetypetextbox")
 let coffeesizetextbox = document.getElementById("coffeesizetextbox")
 let coffeepricetextbox = document.getElementById("coffeepricetextbox")
 let btnsubmit = document.getElementById("btnsubmit")
+let emailsearchtextbox = document.getElementById("emailsearchtextbox")
+let ordersearch = document.getElementById("ordersearch")
 
+
+
+
+// gettting all the orders 
 
 const coffeorderurl = "https://troubled-peaceful-hell.glitch.me/orders"
 let request = new XMLHttpRequest();
@@ -30,8 +36,6 @@ request.addEventListener("load", function() {
         <button id="delbtn" onclick="deletorder('${item.email}')">delete the order</button>
         </div>
         </div>
-        
-
         `
     })
     displaycoffeorders.innerHTML = coffeorderitems.join("")
@@ -39,6 +43,11 @@ request.addEventListener("load", function() {
 request.open('GET', coffeorderurl)
 request.send()
 
+
+
+
+
+// subbmitting the new order will
 
 btnsubmit.addEventListener("click", function() {
     const email = emailtextbox.value
@@ -65,6 +74,47 @@ btnsubmit.addEventListener("click", function() {
 
 })
 
+
+
+
+// search the order using email
+
+ordersearch.addEventListener("click", function() {
+    const emailsearch = emailsearchtextbox.value
+    const searchorderurl = `https://troubled-peaceful-hell.glitch.me/orders/${emailsearch}`
+    let searchrequest = new XMLHttpRequest();
+    searchrequest.addEventListener("load", function() {
+        let searchresult = JSON.parse(this.responseText)
+        filteredorder.innerHTML = `
+        <div id="searchcoffeeorderlist">
+        <div>
+        email:${searchresult.email}
+        </div>
+        <div>
+        type:${searchresult.type}
+        </div>
+        <div>
+        size:${searchresult.size}
+        </div>
+        <div>
+        price:${searchresult.price}
+        </div>
+        </div>
+        `
+    })
+    searchrequest.open('GET', searchorderurl)
+    searchrequest.send()
+})
+
+
+
+
+
+
+
+
+
+// deleting the order
 function deletorder(email) {
     const deletecoffeeorder = `https://troubled-peaceful-hell.glitch.me/orders/${email}`
     let deleterequest = new XMLHttpRequest();

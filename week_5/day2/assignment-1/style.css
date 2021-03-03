@@ -48,3 +48,18 @@ button {
     width: 200px;
     font-size: 30px;
 }
+
+#searchinput {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#searchcoffeeorderlist {
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    background: rgb(241, 201, 90);
+    font-size: 20px;
+    width: 300px;
+}
