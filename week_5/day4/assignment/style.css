@@ -44,6 +44,12 @@
     border: 3px solid black;
 }
 
+#storeitemtextbox {
+    margin: 10px;
+    font-size: 30px;
+    border: 3px solid black;
+}
+
 #btnsubmit {
     margin: 10px;
     font-size: 30px;
