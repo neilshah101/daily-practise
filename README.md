@@ -1,6 +1,7 @@
 
 # week1-python
-  -- day 1
+  -- day 1 (introduction and installations)
+    -- 
   -- day 2
   -- day 3
   -- day 4
