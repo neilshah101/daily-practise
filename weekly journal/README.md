@@ -2,7 +2,7 @@
 # Week 1  (Python)
 
 
-<details>
+<details open>
 <summary>## Day 1</summary> 
 <br>
 - [CLI Exercises]
