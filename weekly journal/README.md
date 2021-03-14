@@ -1,5 +1,5 @@
 
-# Week 1 
+# Week 1  (Python)
 
 ## Day 1 
 - [CLI Exercises]
@@ -21,16 +21,16 @@
 ---   
 
 
-## Day 2
+## Day 2 (introduction to python , string interpolation)
 
 
 
 
-Assignment | live in class code | did it little diffrently
+Assignment | live in class code | did it little again
 ------------ | -------------  | -------------
-Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it little diffrently]
-Even/Odd | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)| [live in class code]
-FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)| [live in class code]
+Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it little again]
+Even/Odd | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)| [did it little again]
+FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)| [did it little again]
 
 
 ---
@@ -66,11 +66,16 @@ FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blo
 - [Class Code](day5/code-downloads/modules-reviews.zip)
 
 
-
+# Week 12 (Python)
+# Week 3  (html & css)
+# Week 4 (javascript)
+# Week 5  (javascript)
+# Week 6  (Front End Project)
 
 # grocery store app -python
 # pool-table app - python
 # iron-man-reactor
+
 
 
 
