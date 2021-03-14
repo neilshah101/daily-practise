@@ -24,9 +24,9 @@
 ## Day 2
 
 ### live in class assignment 
-- [Assignment 1 - Calculator](/Users/neilshah/Desktop/git hub/daily-practise/weekly journal/week_1/day2 /live_class_practice/calculator.py)
-- [Assignment 2 - Even/Odd](/Users/neilshah/Desktop/git hub/daily-practise/weekly journal/week_1/day2 /live_class_practice/even-odd.py)
-- [Assignment 3- FizzBuz](/Users/neilshah/Desktop/git hub/daily-practise/weekly journal/week_1/day2 /live_class_practice/fizzbuzz.py)
+- [Assignment 1 - Calculator](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)
+- [Assignment 2 - Even/Odd](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)
+- [Assignment 3- FizzBuz](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)
 
 
 ---
