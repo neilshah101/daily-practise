@@ -23,17 +23,14 @@
 
 ## Day 2
 
-### live in class assignment 
-- [Assignment 1 - Calculator](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)
-- [Assignment 2 - Even/Odd](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)
-- [Assignment 3- FizzBuz](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)
+
 
 
 Assignment | live in class code | did it little diffrently
 ------------ | -------------  | -------------
-Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)
-Even/Odd | [live in class code] (https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)
-FizzBuz | [live in class code] (https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)
+Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it little diffrently]
+Even/Odd | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)| [live in class code]
+FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)| [live in class code]
 
 
 ---
