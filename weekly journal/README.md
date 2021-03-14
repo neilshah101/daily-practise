@@ -26,7 +26,7 @@
 
 
 
-Assignment | live in class code | did it little again
+Assignment | live in class code | did it again
 ------------ | -------------  | -------------
 Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it again]
 Even/Odd | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)| [did it again]
