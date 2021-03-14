@@ -1,7 +1,10 @@
 
 # Week 1  (Python)
 
-## Day 1 
+
+<details>
+<summary>## Day 1</summary> 
+<br>
 - [CLI Exercises]
 - [Assignment CLI](day1/assignments/assignment-cli.md)
 - [Commands discussed in class](day1/commands-inclass.md)
@@ -19,6 +22,7 @@
 - [Quick Cheat Sheet for UNIX and Mac](http://learntocodewith.me/command-line/unix-command-cheat-sheet/) 
 - [A Unix Survival Guide](http://matt.might.net/articles/basic-unix/) 
 ---   
+</details>
 
 
 ## Day 2 (introduction to python , string interpolation)[day 2 folder link](https://github.com/neilshah101/daily-practise/tree/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20)
