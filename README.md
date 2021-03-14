@@ -2,7 +2,7 @@
 # Week 1 
 
 ## Day 1 
-- [CLI Exercises](https://learnpythonthehardway.org/book/appendixa.html)
+- [CLI Exercises]
 - [Assignment CLI](day1/assignments/assignment-cli.md)
 - [Commands discussed in class](day1/commands-inclass.md)
 - [Python Official Website](https://www.python.org/) (Recommended) 
