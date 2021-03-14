@@ -23,11 +23,11 @@
 
 ## Day 2
 
-- [Activity 1 - String Interpolation](day2/activities/string-interop.md)
-- [Activity 2 - Tip Calculator](day2/activities/tip-calculator.md)
-- [Assignment - Calculator, Even/Odd, FizzBuz](day2/assignments/calc.md)
-- [Python Additional Exercises](https://learnpythonthehardway.org/book/)
-- [Class Code](day2/code-downloads/hello-python.zip)
+### live in class assignment 
+- [Assignment 1 - Calculator](/Users/neilshah/Desktop/git hub/daily-practise/weekly journal/week_1/day2 /live_class_practice/calculator.py)
+- [Assignment 2 - Even/Odd](/Users/neilshah/Desktop/git hub/daily-practise/weekly journal/week_1/day2 /live_class_practice/even-odd.py)
+- [Assignment 3- FizzBuz](/Users/neilshah/Desktop/git hub/daily-practise/weekly journal/week_1/day2 /live_class_practice/fizzbuzz.py)
+
 
 ---
 
