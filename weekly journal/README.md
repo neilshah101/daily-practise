@@ -27,16 +27,17 @@
 
 
 
-Assignment | live in class code | did it again
+description |   | live code in class  | did it again
 ------------ | -------------  | -------------
-Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it again]
-Even/Odd | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)| [did it again]
-FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)| [did it again]
+Tip-Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/live_class_practice/tip-calculator.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/tried%20little%20different/py_practise_tip_calculator.py)
+Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/tried%20little%20different/py_practise_calculator.py)
+Even/Odd | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/even-odd.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/tried%20little%20different/py_practise_even_odd.py)
+FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/fizzbuzz.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/tried%20little%20different/py_practice_fizzbuzz.py)
 
 
 ---
 
-## Day 3 
+## [Day 3 (Loop , Reverse Loop , Reverse String , While Loop) 
 - [Python Practice Exercises 1](https://www.practicepython.org/exercises/)
 - [Python Practice Exercises 2](https://www.w3resource.com/python-exercises/)
 - [Activity 1 - Loop](day3/activities/hello-loops.md)
