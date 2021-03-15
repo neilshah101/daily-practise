@@ -58,16 +58,10 @@ prime Or Not | [live in class code](https://github.com/neilshah101/daily-practis
 
 description | live code in class  | did it again
 ------------ | -------------  | -------------
-Creating a Dictionary | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/py_day3_activity1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py%20_practise_hello_loops.py)
-Nested Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/py_day3_activity1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_reverse_loop.py)
-Multi Nested Dictionary Based on JSON Structure | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/reverse_a_string.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_reverse_string.py)
-TODOList Using Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/while_loop.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_while_loop.py)
-- [Activity 1 - Creating a Dictionary](day4/activities/creating-a-dictionary.md) 
-- [Activity 2 - Nested Dictionaries](day4/activities/nested-dictionaries.md) 
-- [Activity 3 - Multi Nested Dictionary Based on JSON Structore](day4/activities/multi-nested-dict-json-structure.md) 
-- [Optional - Dictionary Exercises](day4/activities/optional-dictionary.md) 
-- [Assignment - TODOList Using Dictionaries](day4/assignments/todolist-using-dictionaries.md)
-- [Class Code](day4/code-downloads/dictionaries-modules.zip)
+Creating a Dictionary | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/creating_dictionary.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-creating-a-dictionary.py)
+Nested Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/nested_dictinaries.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-nested-dictionaries.py)
+Multi Nested Dictionary Based on JSON Structure | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/json_style.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-Multi-Nested-Dictionary-Based-on-JSON-Structure.py)
+TODOList Using Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/todo.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-todo-list.py)
 
 ---
 
