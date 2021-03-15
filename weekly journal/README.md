@@ -1,5 +1,9 @@
 
-<details># Week 1  (Python)
+<details>
+<summary>
+# Week 1  (Python)
+</summary>
+<br>
 ## Day 1 
 - [CLI Exercises]
 - [Assignment CLI](day1/assignments/assignment-cli.md)
