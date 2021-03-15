@@ -52,7 +52,7 @@ palindrome | [live in class code](https://github.com/neilshah101/daily-practise/
 prime Or Not | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/is_prime_or_not.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_prime_or_not.py)
 
 --- 
-## [Day 4 (Creating a Dictionary , Nested Dictionaries , Multi Nested Dictionary Based on JSON Structure)] 
+## [Day 4 (Creating a Dictionary , Nested Dictionaries , Multi Nested Dictionary Based on JSON Structure)] (https://github.com/neilshah101/daily-practise/tree/main/weekly%20journal/week_1/day4)
 
 
 
