@@ -1,5 +1,5 @@
 
-# Week 1  (Python)
+<details># Week 1  (Python)
 ## Day 1 
 - [CLI Exercises]
 - [Assignment CLI](day1/assignments/assignment-cli.md)
@@ -75,7 +75,10 @@ calculate the number of vowels used in a sentence| [live in class code](https://
 Fibonacci numbers in given range | [live in class code]| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practice-algo-assignment-4.py)
 
 
-# Week 12 (Python)
+</details>
+
+# Week 2 (Python)
+
 # Week 3  (html & css)
 # Week 4 (javascript)
 # Week 5  (javascript)
