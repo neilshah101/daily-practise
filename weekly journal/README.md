@@ -1,10 +1,7 @@
 
 <details>
-<summary>
+<summary><h1># Week 1  (Python)</h1></summary>>
 
-# Week 1  (Python)
-
-</summary>
 <br>
 
 ## Day 1 
