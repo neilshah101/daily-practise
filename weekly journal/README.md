@@ -65,21 +65,16 @@ TODOList Using Dictionaries | [live in class code](https://github.com/neilshah10
 
 ---
 
-## [Day 5 (Algo Exercises)]()
+## [Day 5 (Algo Exercises)](https://github.com/neilshah101/daily-practise/tree/main/weekly%20journal/week_1/day5)
 
 
 description | live code in class  | did it again
 ------------ | -------------  | -------------
-Creating a Dictionary | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/creating_dictionary.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-creating-a-dictionary.py)
-Nested Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/nested_dictinaries.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-nested-dictionaries.py)
-Multi Nested Dictionary Based on JSON Structure | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/json_style.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-Multi-Nested-Dictionary-Based-on-JSON-Structure.py)
-TODOList Using Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/todo.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-todo-list.py)
-- [Python Modules](https://www.geeksforgeeks.org/python-modules/)
-- [Git Book](https://git-scm.com/book/en/v2)
-- [Activity 1 - Bubble Sort](day5/activities/bubble-sort.md)
-- [Algorithm Exercises](day5/activities/algo.md)
-- [More Algorithms](day5/code-downloads/pythonAlgos.zip) 
-- [Class Code](day5/code-downloads/modules-reviews.zip)
+Bubble Sort | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/live%20class%20practise/bubble-sort.py)| [did it again]
+perfects quares between two number | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/live%20class%20practise/algo-assignment-1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practise-algo-1-excersie.py)
+value of 'a' to the power 'b'. | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/live%20class%20practise/algo-assignment-2.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practise-algo-2-excersise.py)
+calculate the number of vowels used in a sentence| [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/live%20class%20practise/algo-assignment-3.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practis-algo-3-exercise.py)
+Fibonacci numbers in given range | [live in class code]| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practice-algo-assignment-4.py)
 
 
 # Week 12 (Python)
