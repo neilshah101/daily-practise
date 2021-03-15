@@ -1,6 +1,6 @@
 
 
-<summary><h1>Week 1  (Python)</h1></summary>
+<details><summary><h1>Week 1  (Python)</h1></summary>
 
 <br>
 
@@ -79,6 +79,7 @@ value of 'a' to the power 'b'. | [live in class code](https://github.com/neilsha
 calculate the number of vowels used in a sentence| [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/live%20class%20practise/algo-assignment-3.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practis-algo-3-exercise.py)
 Fibonacci numbers in given range | [live in class code]| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day5/did%20it%20again/py-practice-algo-assignment-4.py)
 
+</details>
 
 
 # Week 2 (Python)
