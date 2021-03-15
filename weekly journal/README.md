@@ -2,22 +2,14 @@
 # Week 1  (Python)
 
 
-<details open>
-<summary>Day 1</summary> 
+<details >
+<summary>Day 1 (Introduction And Installations)</summary> 
 <br>
 <div>
 - [CLI Exercises]
 <div>
 - [Assignment CLI](day1/assignments/assignment-cli.md)
 - [Commands discussed in class](day1/commands-inclass.md)
-- [Python Official Website](https://www.python.org/) (Recommended) 
-- [Installing Anaconda](https://docs.anaconda.com/anaconda/install/
-) 
-- [Windows Command Line vs Mac Terminal](https://enexdi.sciencesconf.org/data/pages/windows_vs_mac_commands_1.pdf)
-- [Running Bash Scripts](https://bash.cyberciti.biz/guide/Hello,_World!_Tutorial)
-- [Creating Environments in Anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
-
-
 
 ### More CLI Resources 
 - [Bash Shell Cheat Sheet](https://learncodethehardway.org/unix/bash_cheat_sheet.pdf) 
@@ -27,11 +19,9 @@
 </details>
 
 
-## Day 2 (introduction to python , string interpolation)[day 2 folder link](https://github.com/neilshah101/daily-practise/tree/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20)
-
-
-
-
+<details>
+<summary>Day 2 (introduction to python , string interpolation)  [day 2 folder link](https://github.com/neilshah101/daily-practise/tree/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20)</summary>
+<br>
 Assignment | live in class code | did it again
 ------------ | -------------  | -------------
 Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it again]
@@ -40,7 +30,7 @@ FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blo
 
 
 ---
-
+</details>
 ## Day 3 
 - [Python Practice Exercises 1](https://www.practicepython.org/exercises/)
 - [Python Practice Exercises 2](https://www.w3resource.com/python-exercises/)
