@@ -65,7 +65,15 @@ TODOList Using Dictionaries | [live in class code](https://github.com/neilshah10
 
 ---
 
-## Day 5
+## [Day 5 (Algo Exercises)]()
+
+
+description | live code in class  | did it again
+------------ | -------------  | -------------
+Creating a Dictionary | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/creating_dictionary.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-creating-a-dictionary.py)
+Nested Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/nested_dictinaries.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-nested-dictionaries.py)
+Multi Nested Dictionary Based on JSON Structure | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/json_style.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-Multi-Nested-Dictionary-Based-on-JSON-Structure.py)
+TODOList Using Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/live_class%20practice/todo.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day4/did%20it%20again/py-practise-todo-list.py)
 - [Python Modules](https://www.geeksforgeeks.org/python-modules/)
 - [Git Book](https://git-scm.com/book/en/v2)
 - [Activity 1 - Bubble Sort](day5/activities/bubble-sort.md)
