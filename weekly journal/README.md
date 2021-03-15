@@ -4,6 +4,7 @@
 
 <br>
 <details>
+
 ## Day 1 
 - [CLI Exercises]
 - [Assignment CLI](day1/assignments/assignment-cli.md)
