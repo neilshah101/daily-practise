@@ -1,6 +1,6 @@
 
 
-<summary><h1>Week 1  (Python)</h1></summary>
+<h1>Week 1  (Python)</h1>
 
 <br>
 <details>
