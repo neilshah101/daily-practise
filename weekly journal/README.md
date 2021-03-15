@@ -52,7 +52,16 @@ palindrome | [live in class code](https://github.com/neilshah101/daily-practise/
 prime Or Not | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/is_prime_or_not.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_prime_or_not.py)
 
 --- 
-## Day 4 
+## [Day 4 (Creating a Dictionary , Nested Dictionaries , Multi Nested Dictionary Based on JSON Structure)] 
+
+
+
+description | live code in class  | did it again
+------------ | -------------  | -------------
+Creating a Dictionary | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/py_day3_activity1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py%20_practise_hello_loops.py)
+Nested Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/py_day3_activity1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_reverse_loop.py)
+Multi Nested Dictionary Based on JSON Structure | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/reverse_a_string.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_reverse_string.py)
+TODOList Using Dictionaries | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/while_loop.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_while_loop.py)
 - [Activity 1 - Creating a Dictionary](day4/activities/creating-a-dictionary.md) 
 - [Activity 2 - Nested Dictionaries](day4/activities/nested-dictionaries.md) 
 - [Activity 3 - Multi Nested Dictionary Based on JSON Structore](day4/activities/multi-nested-dict-json-structure.md) 
