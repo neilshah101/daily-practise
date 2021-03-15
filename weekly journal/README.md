@@ -38,15 +38,18 @@ FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blo
 ---
 
 ## [Day 3 (Loop , Reverse Loop , Reverse String , While Loop) 
-- [Python Practice Exercises 1](https://www.practicepython.org/exercises/)
-- [Python Practice Exercises 2](https://www.w3resource.com/python-exercises/)
-- [Activity 1 - Loop](day3/activities/hello-loops.md)
-- [Activity 2 - Reverse Loop](day3/activities/reverse-loop.md)
-- [Activity 3 - Reverse String](day3/activities/reverse-string.md) 
-- [Activity 4 - While Loop](day3/activities/while-loop.md)
-- [Assignment - Factorial, Palindrome, Prime or NOT](day3/assignments/factorial.md)
-- [Optional - List Exercises](day3/assignments/optional-list-exercises.md) 
-- [Class Code](day3/code-downloads/loops-arrays.zip)
+
+
+
+description | live code in class  | did it again
+------------ | -------------  | -------------
+Loop | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/py_day3_activity1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py%20_practise_hello_loops.py)
+Reverse Loop | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/py_day3_activity1.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_reverse_loop.py)
+Reverse String | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/reverse_a_string.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_reverse_string.py)
+While Loop | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/while_loop.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_while_loop.py)
+Factorial | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/factorial.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_factorial.py)
+palindrome | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/Palindrome.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_palindrome.py)
+prime Or Not | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/live_class%20practice/is_prime_or_not.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day3/did%20it%20again/py_practise_prime_or_not.py)
 
 --- 
 ## Day 4 
