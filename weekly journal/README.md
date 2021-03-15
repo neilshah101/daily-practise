@@ -3,9 +3,11 @@
 
 
 <details open>
-<summary>## Day 1</summary> 
+<summary>Day 1</summary> 
 <br>
+<div>
 - [CLI Exercises]
+<div>
 - [Assignment CLI](day1/assignments/assignment-cli.md)
 - [Commands discussed in class](day1/commands-inclass.md)
 - [Python Official Website](https://www.python.org/) (Recommended) 
