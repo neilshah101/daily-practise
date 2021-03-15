@@ -27,7 +27,7 @@
 
 
 
-description |   | live code in class  | did it again
+description | live code in class  | did it again
 ------------ | -------------  | -------------
 Tip-Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/live_class_practice/tip-calculator.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/tried%20little%20different/py_practise_tip_calculator.py)
 Calculator | [live in class code](https://github.com/neilshah101/daily-practise/blob/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20/live_class_practice/calculator.py)| [did it again](https://github.com/neilshah101/daily-practise/blob/main/weekly%20journal/week_1/day2%20/tried%20little%20different/py_practise_calculator.py)
