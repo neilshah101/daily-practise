@@ -1,6 +1,7 @@
 
 # Week 1  (Python)
 
+
 ## Day 1 
 - [CLI Exercises]
 - [Assignment CLI](day1/assignments/assignment-cli.md)
@@ -21,7 +22,7 @@
 ---   
 
 
-## Day 2 (introduction to python , string interpolation)[day 2 folder link](https://github.com/neilshah101/daily-practise/tree/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20)
+## [Day 2 (introduction to python , string interpolation) ](https://github.com/neilshah101/daily-practise/tree/update-in-readme-of-the-project/weekly%20journal/week_1/day2%20)
 
 
 
