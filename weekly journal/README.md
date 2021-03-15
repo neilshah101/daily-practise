@@ -1,9 +1,9 @@
 
-
+<details>
 <h1>Week 1  (Python)</h1>
 
 <br>
-<details>
+
 
 ## Day 1 
 - [CLI Exercises]
