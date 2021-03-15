@@ -38,11 +38,13 @@ function displaypendingtasks() {
             console.log(tasks)
             let tasksitems = tasks.map((task) => {
                 return `
-                <div>title :${task.title}</div>
-                <div>priority :${task.priority}</div>
-                <div>date :${task.date}</div>
-                <button onclick="completethetask('tasks')" id="taskcheckbox">Mark As Complete</button>
-                <button id="deletbutton">Delete</button><br><br>
+                <div class="task">
+                <div>title : ${task.title}</div>
+                <div>priority : ${task.priority}</div>
+                <div>date : ${task.date}</div>
+                <button onclick="completethetask('${task}')" id="taskcheckbox">Mark As Complete</button><br>
+                <button id="deletebutton">Delete</button><br><br>
+                </div>
                 `
             })
             pendingtasklist.innerHTML = tasksitems.join("")
@@ -51,12 +53,3 @@ function displaypendingtasks() {
 }
 
 displaypendingtasks()
-
-// function completethetask() {
-//     taskcheckbox.addEventListener('click', function() {
-
-//         completedtasklist.appendChild(task)
-
-//     })
-
-// }
