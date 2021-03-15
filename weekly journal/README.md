@@ -37,7 +37,7 @@ FizzBuz | [live in class code](https://github.com/neilshah101/daily-practise/blo
 
 ---
 
-## [Day 3 (Loop , Reverse Loop , Reverse String , While Loop) 
+## [Day 3 (Loop , Reverse Loop , Reverse String , While Loop)[https://github.com/neilshah101/daily-practise/tree/main/weekly%20journal/week_1/day3] 
 
 
 

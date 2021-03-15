@@ -87,6 +87,6 @@ bus = sub
 
 ---------------------------------------------------------
 
-## Assignment 3: Prime or Not
+# Assignment 3: Prime or Not
 
 Take input from the user and find out if that number is prime or not.
