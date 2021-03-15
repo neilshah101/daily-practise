@@ -1,7 +1,7 @@
 let todolist = [
-    { title: "wash the car", priority: "high", date: "03/15/2021" },
-    { title: "file the tax", priority: "high", date: "03/14/2021" },
-    { title: "pay the bills", priority: "high", date: "03/13/2021" }
+    { title: "wash the car", priority: "high", date: "03-15-2021" },
+    { title: "file the tax", priority: "high", date: "03-14-2021" },
+    { title: "pay the bills", priority: "high", date: "03-13-2021" }
 ]
 
 
