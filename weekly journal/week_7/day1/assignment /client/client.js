@@ -8,9 +8,9 @@ let completedtasklist = document.getElementById('completedtasklist');
 
 addbtn.addEventListener("click", function() {
 
-    let title = tasktextbox.value
-    let priority = prioritytextbox.value
-    let date = datetextbox.value
+    let title = tasktextbox.value.toUpperCase()
+    let priority = prioritytextbox.value.toUpperCase()
+    let datetext = datetextbox.value
 
     fetch('http://localhost:3000/todolist', {
             method: 'POST',
@@ -20,7 +20,7 @@ addbtn.addEventListener("click", function() {
             body: JSON.stringify({
                 title: title,
                 priority: priority,
-                date: date
+                date: datetext
             })
         }).then(response => response.json())
         .then(result => {
@@ -36,20 +36,43 @@ function displaypendingtasks() {
         .then(response => response.json())
         .then(tasks => {
             console.log(tasks)
-            let tasksitems = tasks.map((task) => {
-                return `
+            let counter = 0
+            let taskitem = tasks.map((task) => {
+                tasksitems = `
                 <div class="task">
                 <div>title : ${task.title}</div>
                 <div>priority : ${task.priority}</div>
                 <div>date : ${task.date}</div>
-                <button onclick="completethetask('${task}')" id="taskcheckbox">Mark As Complete</button><br>
-                <button id="deletebutton">Delete</button><br><br>
+                <button id="deletebutton" onClick="deleteTask('${counter}')">Mark as complete/Delete</button><br><br>
                 </div>
                 `
+                counter += 1
+                console.log(counter)
+                return tasksitems
             })
-            pendingtasklist.innerHTML = tasksitems.join("")
+            pendingtasklist.innerHTML = taskitem.join("")
         })
 
 }
 
 displaypendingtasks()
+
+
+function deleteTask(num) {
+    fetch('http://localhost:3000/todolist', {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            number: num
+        })
+    })
+
+    .then(response => response.json())
+        .then(result => {
+            alert("The Selected Task Is Deleted")
+            displaypendingtasks()
+        })
+
+}

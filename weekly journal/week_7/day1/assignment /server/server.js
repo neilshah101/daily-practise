@@ -1,6 +1,7 @@
 let todolist = [
     { title: "wash the car", priority: "high", date: "03-15-2021" },
     { title: "file the tax", priority: "high", date: "03-14-2021" },
+    { title: "pay the bills", priority: "high", date: "03-13-2021" },
     { title: "pay the bills", priority: "high", date: "03-13-2021" }
 ]
 
@@ -18,8 +19,6 @@ app.get('/todolist', (req, res) => {
     res.json(todolist)
 })
 
-
-
 app.post("/todolist", (req, res) => {
 
     const title = req.body.title
@@ -31,6 +30,12 @@ app.post("/todolist", (req, res) => {
 
     res.json({ message: "item is added" })
 
+})
+
+app.delete("/todolist", (req, res) => {
+    const itemNum = req.body.number
+    todolist.splice(itemNum, 1)
+    res.json({ message: 'deleted' })
 })
 
 

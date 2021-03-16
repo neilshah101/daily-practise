@@ -61,11 +61,11 @@ h2 {
     background-color: #c8db5c;
     justify-content: space-around;
     align-content: center;
-    width: 100%;
     margin: 10px;
     border: 3px solid black;
     font-size: 30px;
     flex-wrap: wrap;
+    width: 400px;
 }
 
 #deletebutton {
@@ -75,7 +75,9 @@ h2 {
 
 #pendingtasklist {
     display: flex;
+    justify-items: space;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #tasktextbox {
