@@ -47,7 +47,6 @@ function displaypendingtasks() {
                 </div>
                 `
                 counter += 1
-                console.log(counter)
                 return tasksitems
             })
             pendingtasklist.innerHTML = taskitem.join("")
