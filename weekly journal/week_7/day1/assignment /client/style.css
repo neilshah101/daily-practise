@@ -1,0 +1,108 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 10px;
+    text-decoration: underline 5px solid black;
+    font-size: 50px;
+    border-bottom: 5px solid black;
+    margin: 0;
+}
+
+body {
+    background-color: #5cdb95;
+}
+
+#overview {
+    display: flex;
+    background-color: #5cdb95;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 5px solid black;
+}
+
+.enttask {
+    font-size: 30px;
+    /* animation: glow 5s infinite; */
+    text-decoration: underline 5px;
+    color: #1604a2c7;
+    background-color: #5cdb95;
+}
+
+#addbtn {
+    width: 90px;
+    height: 50px;
+    transition: 0.3s;
+    background-color: #5cdb95;
+    border: 3px solid black;
+    border-radius: 20%;
+    color: #1604a2c7;
+    transition: 0.5s;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline 5px;
+    width: 300px;
+    height: auto;
+    transition: 0.3s;
+    background-color: #5cdb95;
+    color: #1604a2c7;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: #c8db5c;
+    justify-content: space-around;
+    align-content: center;
+    margin: 10px;
+    border: 3px solid black;
+    font-size: 30px;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+#deletebutton {
+    background-color: red;
+    height: 50px;
+}
+
+#pendingtasklist {
+    display: flex;
+    justify-items: space;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#tasktextbox {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#prioritytextbox {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#datetextbox {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#taskcheckbox {
+    background-color: rgb(255, 238, 0);
+    height: 50px;
+    margin-top: 10px;
+}
