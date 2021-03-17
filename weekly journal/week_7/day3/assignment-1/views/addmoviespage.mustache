@@ -1,0 +1,50 @@
+<html>
+  <head>
+     <title>add movies</title>
+  </head>
+  <body>
+      <div>
+        <h1>add movies</h1>
+      </div>
+      <div>
+         <form method="post" action="/addmovie/movie-post"> 
+              <div>
+                  <input type="text" name="title" placeholder="title of the movie">
+              </div>
+              <div>
+                  <input type="text" name="description" placeholder="description of the movie">
+              </div>
+              <div>
+                  <input type="text" name="genre" placeholder="genre of the movie">
+              </div>
+              <div>
+                  <input type="text" name="posterurl" placeholder="url of the movie poster">
+              </div>
+              <div>
+                  <button>submit</button>
+              </div>
+         </form>
+      <div>
+      {{#allmovies}}
+      <form method="post" action="/addmovie/movie-delete">
+         <div>
+             <input type='hidden' name='id' value={{id}}>
+             <div>
+                 <h2>{{title}}</h2>
+              </div>
+              <div>
+                 <img src="{{image}}"/>
+              </div>
+              <div>
+                 <h3>description :{{description}}</h3>
+              </div>
+              <div>
+                 <h3>genre:{{genre}}</h3>
+              </div>
+              <button>delete movie</button>
+          <div>
+      </form>
+      {{/allmovies}}
+
+  </body>
+</html>
