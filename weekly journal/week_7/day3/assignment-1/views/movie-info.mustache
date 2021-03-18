@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <title>Movie Info</title>
+   </head>   
+   <body>
+      <div>
+         <button><a href="/movies">see all movies</a></button>
+      <div>
+      <div >
+         <button ><a href="/addmovie">Add New Movie</a></button>
+      </div>
+      {{#choosedmovie}}
+      <form method="post" action="/movies/delete">
+          <input type='hidden' name='id' value={{id}}>
+           <div>
+                 <h2>{{title}}</h2>
+            </div>
+            <div>
+                 <img src="{{image}}"/>
+            </div>
+            <div>
+                 <h3>description :{{description}}</h3>
+            </div>
+            <div>
+                 <h3>genre:{{genre}}</h3>
+            </div>     
+            <button>delete movie</button>
+      </form>
+      {{/choosedmovie}}
+   </body>
+</html>
