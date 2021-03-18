@@ -9,7 +9,7 @@ app.set('view engine', 'mustache')
 app.use(express.urlencoded())
 app.use(express.static('css'))
 
-app.get('/addtrip', (req, res) => {
+app.get('/', (req, res) => {
     res.render('addtrip')
 })
 
@@ -24,7 +24,7 @@ app.post('/itenary', (req, res) => {
 
     let trip = { city: city, fromdate: fromdate, todate: todate, image: image }
     trips.push(trip)
-    res.redirect("/itenary")
+    res.redirect("/")
 })
 
 
@@ -38,6 +38,6 @@ app.get('/itenary', (req, res) => {
 
 
 
-app.listen(3000, () => {
+app.listen(3002, () => {
     console.log('Server is running...')
 })
