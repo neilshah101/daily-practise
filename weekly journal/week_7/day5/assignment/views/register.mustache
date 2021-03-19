@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>registaration page</title>    
+    </head>
+    <body>
+      <div>
+          <h1>Welcome To The Movieverse</h1>
+    </div>
+    <form method="post" action ="/home/register">
+        <div>
+         <input type='hidden' name='id' value={{id}}>
+         <div>
+              <label>name</label>
+              <input type="text" name="name" placeholder="name">
+         </div>
+         <div>
+              <label>email</label>
+              <input type="email" name="email" placeholder="email address">
+         </div>
+         <div>
+              <label>username</label>
+              <input type="text" name="username" placeholder="username">
+         </div>
+         <div>
+               <label>password</label>
+               <input type="password" name="password" placeholder="password">
+          </div>
+          <div>
+            <button>sign up</button>
+           </div>
+        </div>
+    </form>
+    <div>
+       <button><a href="/home">Already a user login here</a></button>
+    </div>
+    </body>
+<html>
