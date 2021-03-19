@@ -4,22 +4,30 @@ const router = express.Router()
 const authenticate = require('../authentication/auth') // importing authenticate function 
 
 router.get('/', authenticate, (req, res) => {
-    res.render('movies', { allmovies: moviesarr })
+    if (moviesarr.length > 0) {
+        const name = req.session.name
+        const username = req.session.username
+        moviesarr = moviesarr.filter((movie) => movie.username == username)
+        console.log(moviesarr)
+        res.render('movies', { allmovies: moviesarr, allusers: users })
+    } else {
+        res.render('addmoviespage', { message: 'No movies in collection' })
+    }
 })
 
 
 
 
 
-// route for getting movie info 
+// route for finding movie info 
 router.get('/:id', authenticate, (req, res) => {
 
-    const name = req.session.name
+    const usernamename = req.session.usernamename
 
     const id = req.params.id
     const choosemovie = moviesarr.find((movie) => movie.id == id)
 
-    res.render('movie-info', { choosedmovie: choosemovie, name: name })
+    res.render('movie-info', { choosedmovie: choosemovie, usernamename: usernamename })
 })
 
 
@@ -34,14 +42,14 @@ router.post("/movie-post", authenticate, (req, res) => {
     const description = req.body.description
     const genre = req.body.genre
     const image = req.body.posterurl
-    const name = req.body.name
+    const username = req.session.username
 
 
-    let movie = { title: title, description: description, genre: genre, image: image, id: Math.floor(100000 + Math.random() * 900000), name: name }
+    let movie = { title: title, description: description, genre: genre, image: image, id: Math.floor(100000 + Math.random() * 900000), username: username }
     moviesarr.push(movie)
     console.log(movie)
     console.log(moviesarr)
-    res.redirect("/addmovie")
+    res.render('addmoviespage', { choosedmovie: movie, username: username })
 })
 
 

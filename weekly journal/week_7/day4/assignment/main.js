@@ -18,8 +18,8 @@ global.users = [
 ]
 
 global.moviesarr = [
-    { title: "avatar", description: "good movie", genre: "scifi", image: "https://upload.wikimedia.org/wikipedia/en/8/8b/Avatar_2_logo.jpg", id: 1 },
-    { title: "avatar", description: "nice movie", genre: "action", image: "https://upload.wikimedia.org/wikipedia/en/8/8b/Avatar_2_logo.jpg", id: 2 }
+    { title: "avatar", description: "good movie", genre: "scifi", image: "https://upload.wikimedia.org/wikipedia/en/8/8b/Avatar_2_logo.jpg", id: 1, username: "neilshah" },
+    { title: "avatar", description: "nice movie", genre: "action", image: "https://upload.wikimedia.org/wikipedia/en/8/8b/Avatar_2_logo.jpg", id: 2, username: "akishah" }
 
 ]
 

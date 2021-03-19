@@ -41,7 +41,7 @@ router.post('/login', (req, res) => {
         if (req.session) {
             req.session.username = username
         }
-        res.render("movies")
+        res.redirect("/movies")
     } else {
         res.render("home", { message: "Username or password is incorrect" })
     }
@@ -49,13 +49,12 @@ router.post('/login', (req, res) => {
 
 
 router.get('/logout', function(req, res, next) {
-    // remove the req.user property and clear the login session
-    // req.logout();
 
-    // destroy session data
-    req.session = null;
 
-    // redirect to homepage
+    req.session.destroy(err => {
+        console.log(err);
+    })
+
     res.redirect('/home');
 });
 

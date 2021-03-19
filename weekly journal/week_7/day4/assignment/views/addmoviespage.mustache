@@ -9,9 +9,11 @@
       <div>
       <button><a href="/movies">see all movies</a></button>
       <div>
+      {{message}}
       <div>
          <form method="post" action="/movies/movie-post"> 
               <div>
+                  <input type='hidden' name='username' value={{username}}>
                   <input type="text" name="title" placeholder="title of the movie">
               </div>
               <div>
