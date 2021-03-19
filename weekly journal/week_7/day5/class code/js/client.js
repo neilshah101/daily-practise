@@ -12,9 +12,8 @@ sendButton.addEventListener('click', () => {
     const chatMessage = chatMessageTextBox.value
         // send a message to the server 
         //socket.emit('Houston', chatMessage)
-    message = { username: username, chatMessage: chatMessage }
         // send an object to the server 
-    socket.emit('Houston', { username: username, message: message })
+    socket.emit('Houston', { username: username, message: chatMessage })
 })
 
 // client listening for messages from the server 
