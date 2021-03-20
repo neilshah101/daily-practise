@@ -3,6 +3,9 @@ const app = express()
 const mustacheExpress = require('mustache-express')
 const session = require('express-session')
 var authenticate = require('./authentication/auth')
+const http = require('http').Server(app)
+const io = require('socket.io')(http)
+
 
 const addmovieprouter = require('./routes/addmovie')
 const movierouter = require('./routes/movies')
