@@ -9,6 +9,9 @@
       <div >
          <button ><a href="/addmovie">Add New Movie</a></button>
       </div>
+      <div>
+      <button><a href="/chat">live chat</a></button>
+      </div>
       {{#choosedmovie}}
       <form method="post" action="/movies/delete">
           <input type='hidden' name='id' value={{id}}>
@@ -27,5 +30,9 @@
             <button>delete movie</button>
       </form>
       {{/choosedmovie}}
+      <div>
+        <button><a href="/home/logout">logout</a></button>
+      </div>
+
    </body>
 </html>
