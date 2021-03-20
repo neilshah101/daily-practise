@@ -1,15 +1,21 @@
 const express = require('express')
 const app = express()
+const http = require('http').Server(app)
+const io = require('socket.io')(http)
 const mustacheExpress = require('mustache-express')
 const session = require('express-session')
 var authenticate = require('./authentication/auth')
 
+
+
+
+//installing the router
 const addmovieprouter = require('./routes/addmovie')
 const movierouter = require('./routes/movies')
 const homerouter = require('./routes/home')
+const chatrouter = require('./routes/chats')
 
-
-
+global.allChatMessages = []
 
 global.users = [
     { name: "neil", email: "neilshah101@gmail.com", username: "neilshah", password: "123456", id: 1 },
@@ -37,6 +43,7 @@ app.use(session({
 app.use("/addmovie", addmovieprouter)
 app.use("/movies", movierouter)
 app.use("/home", homerouter)
+app.use("/chats", chatrouter)
 
 app.engine('mustache', mustacheExpress())
 app.set('views', './views')
@@ -44,6 +51,6 @@ app.set('view engine', 'mustache')
 
 
 
-app.listen(3000, () => {
+http.listen(3000, () => {
     console.log('Server is running...')
 })
