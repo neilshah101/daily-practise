@@ -5,7 +5,7 @@ const messagesUL = document.getElementById("messagesUL")
 
 
 
-
+//activates on pressing submit button 
 sendButton.addEventListener('click', () => {
 
     const username = usernameTextBox.value
