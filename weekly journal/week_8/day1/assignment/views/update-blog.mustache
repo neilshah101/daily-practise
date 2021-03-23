@@ -1,0 +1,41 @@
+<html>
+  <head>  
+      <title>update blogs</title>
+  </head>
+
+<body>
+    {{#blogs}}
+    <div>
+    <div>
+        <input type="hidden" value="{{post_id}}" name="{{post_id}}">
+        TITLE: {{title}}
+    </div>
+    <div>
+        BODY: {{body}}
+    </div>
+    <div>   
+        DATE CREATED: {{date_created}}
+    </div>
+    <div>
+        DATE UPDTAED: {{date_updated}}
+    </div>
+    <div>    
+        PUBLISHED STATUS: {{is_published}}
+   </div>
+   </div>
+   {{/blogs}}
+   <h3>Input below to update the post</h3>
+   <form method="POST" action="/update-blog/:{{post_id}}">
+       <div>
+          <input type="text" name="title" placeholder="title of the blog">
+       </div>
+       <div>
+          <input type="text" name="body" placeholder="body of the blog">
+       </div>
+       
+       <div>
+         <button>Save</button>
+       </div>
+    </form>
+
+</body>

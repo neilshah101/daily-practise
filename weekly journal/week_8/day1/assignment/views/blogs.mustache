@@ -9,6 +9,7 @@
     {{#blogs}}
     <div>
     <div>
+        <input type="hidden" value="{{post_id}}" name="{{post_id}}">
         TITLE: {{title}}
     </div>
     <div>
@@ -22,6 +23,14 @@
     </div>
     <div>    
         PUBLISHED STATUS: {{is_published}}
+   </div>
+   <div>
+     <form method="POST" action="/delete-blog">
+            <button>Delete This Post</button>
+     </form> 
+   </div>
+   <div>
+     <button><a href="/update-blog/{{post_id}}">Update The Post</a></button>
    </div>
    </div><br>
    

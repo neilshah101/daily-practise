@@ -29,17 +29,46 @@ app.post('/add-blog', (req, res) => {
 
     const title = req.body.title
     const body = req.body.body
-    const is_published = req.body.is_published = "on" ? true : false
+    const isPublished = req.body.isPublished == "on" ? true : false
 
-    db.none('INSERT INTO blogs(title,body,is_published) VALUES($1, $2, $3)', [title, body, is_published])
+    db.none('INSERT INTO blogs(title,body,is_published) VALUES($1, $2, $3)', [title, body, isPublished])
         .then(() => {
             res.redirect('/blogs')
         })
 })
 
+app.post('/delete-blog', (req, res) => {
+    const postid = req.params.post_id
+    db.none('DELETE FROM blogs WHERE post_id = $1', [postid])
+        .then(() => {
+            console.log("deleted")
+            res.redirect('/blogs')
+        })
+})
+
+app.get('/update-blog/:post_id', (req, res) => {
+    const postid = req.params.post_id
+    db.any('SELECT post_id, title, body, date_created, date_updated, is_published FROM blogs WHERE post_id = $1;', [postid])
+        .then(blogs => {
+            res.render('update-blog', { blogs: blogs })
+        })
+
+})
+
+app.post('/update-blog/:post_id', (req, res) => {
+    let post_id = req.body.post_id
+    let title = req.body.title
+    let body = req.body.body
+        // console.log(post_id)
+
+    db.none('UPDATE blogs SET title = $1, body = $2 WHERE post_id = $3;', [title, body, post_id])
+        .then(() => {
+            console.log('updated blog')
+            res.redirect('/blogs')
+        })
 
 
-
+})
 
 
 
