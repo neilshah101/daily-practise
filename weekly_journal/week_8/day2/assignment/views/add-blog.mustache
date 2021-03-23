@@ -1,0 +1,27 @@
+<html>
+  <head>
+  <title>add new blog</title>
+  </head>
+
+  <body>
+  <div>
+      <button><a href="/users/logout">Logout</a></button>
+    </div>
+     <form method="POST" action="/add-blog">
+       <div>
+          <input type="text" name="title" placeholder="title of the blog">
+       </div>
+       <div>
+          <input type="text" name="body" placeholder="body of the blog">
+       </div>
+       <div>
+           <label>Is Published</label> <input type="checkbox" name="isPublished" />
+       </div>
+       <div>
+         <button>Save</button>
+       </div>
+     </form>
+
+  </body>
+
+</html>
