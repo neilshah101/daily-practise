@@ -81,7 +81,7 @@ app.post('/update-blog/:post_id', (req, res) => {
     let post_id = req.params.post_id
     let title = req.body.title
     let body = req.body.body
-        // console.log(post_id) .......
+        // console.log(post_id) 
 
     db.none('UPDATE blogs SET title = $1, body = $2 WHERE post_id = $3;', [title, body, post_id])
         .then(() => {
