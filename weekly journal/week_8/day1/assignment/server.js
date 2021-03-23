@@ -37,7 +37,7 @@ app.post('/add-blog', (req, res) => {
         })
 })
 
-app.post('/delete-blog', (req, res) => {
+app.post('/delete-blog/:post_id', (req, res) => {
     const postid = req.params.post_id
     db.none('DELETE FROM blogs WHERE post_id = $1', [postid])
         .then(() => {
