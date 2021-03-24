@@ -103,6 +103,31 @@ app.get('/my-blogs', (req, res) => {
 })
 
 
+app.get('/blogs/comment/:post_id', (req, res) => {
+
+    let post_id = req.params.post_id
+    let username = req.session.username
+
+    db.any('SELECT comment FROM comments where post_id = $1', [post_id])
+        .then(comment => {
+            res.render('blogs', { comment: comment, username: username })
+        })
+})
+
+
+
+
+
+app.post('/blogs/comment/:post_id', (req, res) => {
+    let comment = req.body.comment
+    let post_id = req.body.post_id
+    let user_id = req.session.userId
+    db.none('INSERT INTO comments(comment, post_id, user_id) VALUES($1, $2, $3)', [comment, post_id, user_id])
+        .then(() => {
+            res.redirect('/blogs')
+        })
+
+})
 
 
 app.listen(3000, () => {
