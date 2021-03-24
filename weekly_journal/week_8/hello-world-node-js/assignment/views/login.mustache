@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>login</title>
+    </head>
+    <body>
+        <div>
+             <h1>login</h1>
+        </div>
+        {{message}}
+        <form method="POST" action = "/users/login">
+          <input type="text" name="username" placeholder="username" />
+          <input type="password" name="password" placeholder="password" />
+          <button>Login</button>
+        </form>
+
+        <div>
+            <button><a href="/users/registration">signup</a></button>
+        </div>
+    </body>
+</html>
