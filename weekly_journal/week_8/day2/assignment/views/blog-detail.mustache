@@ -8,12 +8,12 @@
     <div>
       <button><a href="/users/logout">Logout</a></button>
     </div>
-    {{#blogs}}
+    
     <div>
-
+   
     <div>
         <input type="hidden" value="{{post_id}}" name="{{post_id}}">
-        TITLE: {{title}}
+        TITLE: {{blogs.title}}
     </div>
     <div>
         BODY: {{body}}
@@ -28,37 +28,18 @@
         PUBLISHED STATUS: {{is_published}}
    </div>
    <div>
-       {{#comment}}
-      <form method ="POST" action ="/blogs/comment/{{post_id}}">
-          <h4>{{comment}}</h4>
-        <input type="text" name="comment" placeholder="comment here">
-        <button>submit comment</button>
-      </form>
-      {{/comment}}
-   </div>
-   <div>
-     <button><a href="/update-blog/{{post_id}}">show blog details</a></button>
-   </div>
-   <div>
-     <form method="POST" action="/delete-blog/{{post_id}}">
-            <button>Delete This Post</button>
-     </form> 
-   </div>
-   <div>
-     <button><a href="/update-blog/{{post_id}}">Update The Post</a></button>
-   </div>
-   </div>
-   <div>
-     <button><a href="/my-blogs">my Post</a></button>
-   </div>
-   <br>
+   {{#blogs}}
+   <h4>{{comment}}</h4>
+
+  </div>
+  {{/blogs}}
+  <div>
+    <button><a href="/blogs">show all blogs</a></button>
+  </div>
+  
+
    
-    {{/blogs}}
-
-    <div>
-     <button><a href="/add-blog">Add New Blog</a></button>
-   </div>
-
+   
     
 
 

@@ -28,16 +28,15 @@
         PUBLISHED STATUS: {{is_published}}
    </div>
    <div>
-       {{#comment}}
+     
       <form method ="POST" action ="/blogs/comment/{{post_id}}">
-          <h4>{{comment}}</h4>
         <input type="text" name="comment" placeholder="comment here">
         <button>submit comment</button>
       </form>
-      {{/comment}}
+     
    </div>
    <div>
-     <button><a href="/update-blog/{{post_id}}">show blog details</a></button>
+     <button><a href="/blog-detail/{{post_id}}">show blog details</a></button>
    </div>
    <div>
      <form method="POST" action="/delete-blog/{{post_id}}">
