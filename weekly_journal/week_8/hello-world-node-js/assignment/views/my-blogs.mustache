@@ -28,6 +28,12 @@
         PUBLISHED STATUS: {{is_published}}
    </div>
    <div>
+      <form>
+         <input type="text" name="comment" placeholder="comment here">
+         <button><a href="/">submit comment</a></button>
+      </form>
+   </div>
+   <div>
      <form method="POST" action="/delete-blog/{{post_id}}">
             <button>Delete This Post</button>
      </form> 

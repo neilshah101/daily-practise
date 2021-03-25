@@ -36,7 +36,10 @@ app.set('view engine', 'mustache')
 
 
 app.get('/blogs', (req, res) => {
-    db.any('SELECT post_id, title, body,date_created, date_updated, is_published FROM blogs')
+
+    let post_id = req.body.post_d
+
+    db.any('SELECT post_id, title, body, date_created FROM blogs')
         .then(blogs => {
             res.render('blogs', { blogs: blogs })
         })
@@ -103,6 +106,37 @@ app.get('/my-blogs', (req, res) => {
 })
 
 
+// app.get('/blogs/comment/:post_id', (req, res) => {
+
+//     let post_id = parseInt(req.params.post_id)
+//     let username = req.session.username
+
+//     db.any('SELECT comment FROM comments where post_id = $1', [post_id])
+//         .then(comment => {
+//             res.render('blogs', { comment: comment, username: username })
+//         })
+// })
+
+app.get('/blog-detail/:post_id', (req, res) => {
+    let post_id = req.params.post_id
+    db.any('SELECT blogs.post_id, blogs.title, blogs.body, blogs.date_created, comments.comment FROM blogs JOIN comments ON blogs.post_id = comments.post_id WHERE blogs.post_id = $1', [post_id])
+        .then((blog) => {
+            res.render('blog-detail', { blogs: blog })
+        })
+})
+
+
+
+app.post('/blogs/comment/:post_id', (req, res) => {
+    let comment = req.body.comment
+    let post_id = req.params.post_id
+    let userId = req.session.userId
+    db.none('INSERT INTO comments(comment, post_id, user_id) VALUES($1, $2, $3)', [comment, post_id, userId])
+        .then((blog) => {
+            res.redirect('/blogs')
+        })
+
+})
 
 
 app.listen(3000, () => {

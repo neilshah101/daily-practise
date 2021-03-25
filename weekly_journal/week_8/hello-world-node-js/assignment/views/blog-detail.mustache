@@ -1,0 +1,47 @@
+<html>
+  <head>  
+      <title>all blogs</title>
+  </head>
+
+<body>
+
+    <div>
+      <button><a href="/users/logout">Logout</a></button>
+    </div>
+    
+    <div>
+   
+    <div>
+        <input type="hidden" value="{{post_id}}" name="{{post_id}}">
+        TITLE: {{blogs.title}}
+    </div>
+    <div>
+        BODY: {{body}}
+    </div>
+    <div>   
+        DATE CREATED: {{date_created}}
+    </div>
+    <div>
+        DATE UPDTAED: {{date_updated}}
+    </div>
+    <div>    
+        PUBLISHED STATUS: {{is_published}}
+   </div>
+   <div>
+   {{#blogs}}
+   <h4>{{comment}}</h4>
+
+  </div>
+  {{/blogs}}
+  <div>
+    <button><a href="/blogs">show all blogs</a></button>
+  </div>
+  
+
+   
+   
+    
+
+
+</body>
+</html>
