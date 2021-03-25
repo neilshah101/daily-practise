@@ -106,16 +106,7 @@ app.get('/my-blogs', (req, res) => {
 })
 
 
-// app.get('/blogs/comment/:post_id', (req, res) => {
 
-//     let post_id = parseInt(req.params.post_id)
-//     let username = req.session.username
-
-//     db.any('SELECT comment FROM comments where post_id = $1', [post_id])
-//         .then(comment => {
-//             res.render('blogs', { comment: comment, username: username })
-//         })
-// })
 
 app.get('/blog-detail/:post_id', (req, res) => {
     let post_id = req.params.post_id
