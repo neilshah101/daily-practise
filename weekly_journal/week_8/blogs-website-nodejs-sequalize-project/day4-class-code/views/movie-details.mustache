@@ -1,0 +1,42 @@
+
+
+<h1>Movie Details</h1>
+
+{{#movie}}
+   
+    {{title}}
+
+<h3>Add Review</h3>
+
+<form method="POST" action="/add-review">
+    <input type="hidden" value={{id}} name="movieId" />
+    <input type="text" placeholder="title" name="title" />
+    <input type="text" placeholder="name" name="name" />
+    <button>Save Review</button>
+</form>
+
+<ul>
+{{#reviews}}
+
+    <li>{{title}} by {{name}}</li>
+
+{{/reviews}}
+</ul>
+
+
+
+{{/movie}}
+
+<!-- 
+Movie 
+   - title 
+   - director 
+   - rating 
+   - reviews 
+          - 0 
+              - title 
+              - name 
+          - 1 
+              - title 
+              - name 
+-->

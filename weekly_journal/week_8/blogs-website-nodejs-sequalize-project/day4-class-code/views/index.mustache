@@ -1,0 +1,18 @@
+
+
+<ul>
+{{#movies}}
+
+    <li>
+        <form method="POST" action="/delete-movie">
+            <input type="hidden" value={{id}} name = "movieId" />
+            <a href="/movies/{{id}}">
+                <label>{{title}}</label>
+             </a>
+            <button>Delete</button>
+        </form>
+    </li>
+    
+
+{{/movies}}
+</ul>
