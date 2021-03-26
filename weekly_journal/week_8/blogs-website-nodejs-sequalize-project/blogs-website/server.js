@@ -108,8 +108,63 @@ app.get('/movies/:genre', (req, res) => {
     })
 })
 
+//showing all movie details
+app.get('/movies/details/:movieId', (req, res) => {
+    const movieId = req.params.movieId
+    models.Movie.findByPk(movieId, {
+            include: [{
+                model: models.review,
+                as: 'reviews'
+            }]
 
+        })
+        .then(movie => {
+            console.log(movie)
+            res.json(movie)
+        })
 
+})
+
+//add a review
+app.post('/add-review', (req, res) => {
+    const movieId = req.body.movieId
+    const title = req.body.title
+    const name = req.body.name
+
+    let review = models.review.build({
+        movieId: movieId,
+        title: title,
+        name: name,
+    })
+    review.save().then(savedReview => {
+        res.send("your valuable rewiew has been saved")
+    }).catch((error) => {
+        res.send("unable to save review")
+    })
+
+})
+
+//see all reviews
+app.get('/reviews', (req, res) => {
+    models.review.findAll({
+            include: [{
+                model: models.Movie,
+                as: 'movie'
+            }]
+        })
+        .then(reviews => res.json(reviews))
+})
+
+//delete a review 
+app.post('/delete-review', (req, res) => {
+    const reviewid = req.body.reviewid
+
+    models.review.destroy({
+        where: {
+            id: reviewid
+        }
+    }).then(() => res.send("Your rewiew has been deleted"))
+})
 
 
 
