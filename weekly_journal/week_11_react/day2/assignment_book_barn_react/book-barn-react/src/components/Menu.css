@@ -1,0 +1,19 @@
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+.menu-box-logo {
+    width:250px;
+}
+
+.menu-box {
+    width :150px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
