@@ -1,4 +1,4 @@
-import { Component, component } from "react";
+import { Component } from "react";
 
 class Counter extends Component {
 

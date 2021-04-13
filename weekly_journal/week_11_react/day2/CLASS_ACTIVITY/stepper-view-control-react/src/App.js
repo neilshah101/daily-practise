@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import Counter from './Counter'
-
+import SwitchController from './SwitchController'
 
 
 class App extends Component {
@@ -9,6 +9,7 @@ class App extends Component {
       <div>
         <h1>STEEPER VIEW CONTROL</h1>
           <Counter/>
+          <SwitchController/>
       </div>
     )
   }
