@@ -6,40 +6,30 @@ class Books extends Component {
 
         const books = this.props.books
         const bookItems = books.map((book,index) =>{
-            return <div className = "book-container">
-                
-                <div>
-                    <h2>{book.title}</h2>
-                </div>
-                <div>
-                    <img src= {`https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/${book.imageLink}?raw=true`} alt =""/>
-                </div>
-                <div>
-                    <p><b>Author: {book.author}</b></p>
-                </div>
-                <div>
-                    <p><b>Language: {book.language}</b></p>
-                </div>
-                <div>
-                    <p><b>Country: {book.country}</b></p>
-                </div>
-                <div>
-                    <p><b> Total Pages : {book.pages}</b></p>
-                </div>
-                <div>
-                    <p><b>Pushlished Year: {book.year}</b></p>
-                </div>
-                <div>
-                    <button><a href={book.link}><b>Read Here </b></a></button>
-                </div>
+            return <div className="card" style={{width: "18rem"}}>
+             <img src={`https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/${book.imageLink}?raw=true`} className="card-img-top" alt="..."/>
+            <div className="card-body">
+              <h5 className="card-title">{book.title}</h5>
             </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Author: {book.author}</li>
+              <li className="list-group-item">Language: {book.language}</li>
+              <li className="list-group-item">Country: {book.country}</li>
+              <li className="list-group-item">Total Pages : {book.pages}</li>
+              <li className="list-group-item">Pushlished Year: {book.year}</li>
+            </ul>
+            <div className="card-body">
+              <button><a href={book.link} className="card-link">Read More</a></button>
+            </div>
+          </div>
+                
         })
         return (
             <div>
-                <div>
+                <div className="best-book-h1" >
                    <h1>Best books Of the Month</h1>
                 </div>
-                <div className ="all-book-container">
+                <div className="card_flex" >
                     {bookItems}
                 </div>
             </div>
