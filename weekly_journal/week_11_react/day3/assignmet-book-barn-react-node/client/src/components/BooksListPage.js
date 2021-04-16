@@ -1,33 +1,20 @@
 import { Component } from "react"
+import { NavLink } from "react-router-dom";
+
 import './BookListPage.css'
 
 
 export class BookList extends Component{
     
 
-    handleDelete = (book_id) => {
-        fetch(`http://localhost:8080/delete-book/${book_id}`,{
-            method:'DELETE',
-            headers:{
-
-            }
-        })
-    }
-
-
-
-
     render() {
         const books = this.props.books
         console.log(books)
         const bookItems = books.map((book , index) => {
-            return <div className="card" style={{width: "18rem"}}>
-                    <div>
+            return <div  key = {book.book_id} className="card" style={{width: "18rem"}}>
+                    <div >
                         <div>
                         <img src={`${book.imagelink}`} className="card-img-top" alt="..."/>
-                        </div>
-                        <div>
-                           <input type ="hidden" value = {`${book.book_id}`} />
                         </div>
                         <div>
                             <h2>{book.title}</h2>
@@ -40,10 +27,13 @@ export class BookList extends Component{
                         </div>
                         <div>
                             <h5>Published Year{book.year}</h5>
-                        </div>    
-                        <div>
-                            <button onClick= {this.handleDelete}>delete this book</button>
                         </div>
+                        <div>
+                            <button><NavLink to= {`/update-book/${book.book_id}`}>Update-Books</NavLink></button>
+                        </div>    
+                        
+                            <button onClick= {() => this.props.onDelete(book.book_id)}>Delete This Book</button>
+                        
                     </div><br></br>
                 </div>
         })
@@ -85,12 +75,27 @@ export class BooksListPage extends Component {
         })
     }
 
+    handleOnDelete = (bookId) => {
+        console.log(bookId)
+        fetch(`http://localhost:8080/delete-book/${bookId}`,{
+            method:'DELETE'
+        
+        }).then(response => response.json())
+        .then(result => {
+            if(result.success) {
+                this.props.history.push('/')
+               
+            }
+        })
+        
+    }
+
 
     render() {
         return (
             <div>
                 
-                <BookList books= {this.state.books}/>
+                <BookList books= {this.state.books} onDelete = {this.handleOnDelete}/>
             </div>
         )
     }

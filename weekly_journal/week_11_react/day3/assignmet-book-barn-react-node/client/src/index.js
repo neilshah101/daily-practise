@@ -9,6 +9,7 @@ import { BaseLayout } from './components/Baselayout';
 import HomePage from "./components/HomePage";
 import { BooksListPage } from "./components/BooksListPage";
 import AddBookPage from "./components/AddBookPage";
+import UpdateBook from "./components/UpdateBook";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
@@ -20,6 +21,7 @@ ReactDOM.render(
           <Route exact path = "/" component = {HomePage} />
           <Route exact path = "/all-books" component = {BooksListPage} />
           <Route exact path = "/add-books" component = {AddBookPage} />
+          <Route  path = "/update-book/:book_id" component = {UpdateBook} />
         </Switch>
       </BaseLayout>
     </BrowserRouter>
