@@ -7,7 +7,7 @@ function App(){
   return(
     <div className ="main-container">
       <div className ="header-container">
-        <h1>App</h1>
+        <h1>Incerement Decrement Counter Using React And Redux</h1>
       </div>
       <div>
         <h1><Counter /></h1>
