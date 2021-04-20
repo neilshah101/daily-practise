@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { useState } from 'react'
+import * as actionCreators from './store/creators/actionCreators'
 import './Counter.css'
 
 function Counter(props){
@@ -72,11 +73,11 @@ function Counter(props){
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onIncrement:() => dispatch({type: 'INCREMENT'}),
-        onDecrement:() => dispatch({type: 'DECREMENT'}),
-        onAdd:(value) => dispatch({type:'ADD', payload: value}),
-        onSub:(value) => dispatch({type:'SUB', payload: value}),
-        onMult:(value) => dispatch({type:'MULT', payload: value}),
+        onIncrement:() => dispatch(actionCreators.incrementCounter()),
+        onDecrement:() => dispatch(actionCreators.decrementCounter()),
+        onAdd:(value) => dispatch(actionCreators.addCounter(value)),
+        onSub:(value) => dispatch(actionCreators.subtractCounter(value)),
+        onMult:(value) => dispatch(actionCreators.multiplyCounter(value)),
 
 
     }
