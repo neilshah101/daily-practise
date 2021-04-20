@@ -28,7 +28,7 @@ function DisplayMyCart (props){
     return(
         <div>
             <div>
-                <h1> my cart page </h1>
+                <h1 className="best-book-h1"> my cart page </h1>
             </div>
             <div className="card_flex" >
                     {cartItems}
