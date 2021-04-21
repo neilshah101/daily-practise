@@ -19,7 +19,7 @@ function DisplayMyCart (props){
                             <h5>Author: {cart.publisher}</h5>
                         </div>
                         <div>
-                            <h5>Published Year{cart.year}</h5>
+                            <h5>Published Year: {cart.year}</h5>
                         </div>                        
                     </div><br></br>
                 </div>
@@ -40,7 +40,7 @@ function DisplayMyCart (props){
 
 const mapStateToProps = (state) => {
     return {
-        cart: state.cart
+        cart: state.cartR.cart
     }
 }
 

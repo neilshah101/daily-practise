@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 export class Menu extends Component {
     render() {
         return (
-            <div className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="navbar sticky navbar-expand-lg navbar-light bg-light">
                 <div>
                     <h1>Book Barn</h1>
                 </div>
@@ -15,13 +15,16 @@ export class Menu extends Component {
                     <button><NavLink to= "/">Home</NavLink></button>
                 </div>
                 {this.props.isLoggedIn ?<div>
-                    <button><NavLink to= "/all-books">My-Books</NavLink></button>
+                    <button><NavLink to= "/all-books">All-Books</NavLink></button>
                 </div>:null}
                 {this.props.isLoggedIn ?<div>
                     <button><NavLink to= "/add-books">Add-Books</NavLink></button>
                 </div>:null}
                 {this.props.isLoggedIn ?<div>
                     <button><NavLink to= "/my-cart">My-Cart</NavLink></button>
+                </div>:null}
+                {this.props.isLoggedIn ?<div>
+                    <button><NavLink to= "/my-favorite-book">My-Favorite</NavLink></button>
                 </div>:null}
                 {!this.props.isLoggedIn ?<div>
                     <button onClick = {() => this.props.onLogin()}>Login</button>
@@ -42,7 +45,7 @@ const mapDispatchToProps = (dispatch) => {
 }
 const mapStateToProps = (state) => {
     return {
-        isLoggedIn: state.isAuthenticated 
+        isLoggedIn: state.authR.isAuthenticated 
     }
 }
 

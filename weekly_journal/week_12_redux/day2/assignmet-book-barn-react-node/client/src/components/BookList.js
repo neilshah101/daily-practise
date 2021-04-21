@@ -9,6 +9,10 @@ class BookList extends Component{
         this.props.onAddToCart(book)
     }
 
+    handleFavorite = (book) => {
+        this.props.onFavorite(book)
+    }
+
     render() {
         const books = this.props.books
         console.log(books)
@@ -22,13 +26,16 @@ class BookList extends Component{
                             <h2>{book.title}</h2>
                         </div>
                         <div>
-                            <h5>{book.genre}</h5>
+                            <h5>Genre : {book.genre}</h5>
                         </div>
                         <div>    
                             <h5>Author: {book.publisher}</h5>
                         </div>
                         <div>
-                            <h5>Published Year{book.year}</h5>
+                            <h5>Published Year: {book.year}</h5>
+                        </div>
+                        <div>
+                            <button onClick = {() => this.handleFavorite(book)}>Favorite This Book</button>
                         </div>
                         <div>
                             <button onClick = {() => this.handleAddToCart(book)}>Add to Cart</button>
@@ -58,7 +65,8 @@ class BookList extends Component{
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onAddToCart :(book) => dispatch(actionCreators.onAddToCart(book))
+        onAddToCart :(book) => dispatch(actionCreators.onAddToCart(book)),
+        onFavorite :(book) => dispatch(actionCreators.onFavorite(book))
         
     }
 

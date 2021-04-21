@@ -17,9 +17,11 @@ class BooksListPage extends Component {
     componentDidMount() {
         console.log(this.props)
         this.getAllBooks()
+       
     }
 
     getAllBooks = () =>{
+        //change the api here to get all books
         fetch('http://localhost:8080/all-books')
         .then(response => response.json())
         .then (books => {
@@ -29,6 +31,7 @@ class BooksListPage extends Component {
         })
     }
 
+    
     handleOnDelete = (bookId) => {
         console.log(bookId)
         fetch(`http://localhost:8080/delete-book/${bookId}`,{
@@ -37,6 +40,7 @@ class BooksListPage extends Component {
         }).then(response => response.json())
         .then(result => {
             if(result.success) {
+                alert("Book Is deleted")
                 this.props.history.push('/')
                
             }

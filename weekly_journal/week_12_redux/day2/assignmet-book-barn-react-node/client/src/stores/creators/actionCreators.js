@@ -6,3 +6,10 @@ export const onAddToCart =(book) => {
         payload : book
     }
 }
+
+export const onFavorite =(book) => {
+    return {
+        type: actionTypes.onFavorite,
+        payload : book
+    }
+}
