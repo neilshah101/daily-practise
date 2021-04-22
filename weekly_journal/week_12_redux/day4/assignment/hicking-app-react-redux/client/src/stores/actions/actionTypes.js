@@ -1,0 +1,1 @@
+export const Get_All_Locations = 'Get_All_Locations'

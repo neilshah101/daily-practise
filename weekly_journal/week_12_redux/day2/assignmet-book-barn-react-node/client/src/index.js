@@ -19,7 +19,7 @@ import {combineReducers, createStore } from 'redux'
 import cartReducer from './stores/reducers/cart'
 import authReducer from './stores/reducers/authentictaion'
 import favoriteReducer from './stores/reducers/favorite'
-import reducer from './stores/reducer';
+// import reducer from './stores/reducer';
 import { Provider } from 'react-redux'
 
 
