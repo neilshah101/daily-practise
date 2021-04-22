@@ -11,10 +11,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 locations: action.payload
             }
-        case 'Get_All_Locations':
-            return {
-                ...state.filter(locations => locations !== action.payload)
-                }
+        
         default:
             return state
     }
