@@ -20,6 +20,9 @@ function LocationList(props) {
                 longitude: {location.longitude}
             </div>
             <div>
+                <button><a href={` https://www.latlong.net/c/?lat=${location.latitude}&long=${location.longitude}`} target ="_blank"> Map</a></button>
+            </div>
+            <div>
                 <button onClick = {() => actionCreators.handleOnDelete(location.geo_id)}>delete this location</button>
             </div><br></br>
         </div>
