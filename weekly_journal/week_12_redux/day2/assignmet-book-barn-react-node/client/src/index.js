@@ -7,6 +7,8 @@ import './index.css';
 // import App from './components/App';
 import { BaseLayout } from './components/Baselayout';
 import HomePage from "./components/HomePage";
+import Register from "./components/Register"
+import Login from "./components/Login";
 import  BooksListPage from "./components/BooksListPage";
 import AddBookPage from "./components/AddBookPage";
 import UpdateBook from "./components/UpdateBook";
@@ -41,7 +43,9 @@ ReactDOM.render(
         <BaseLayout>
           <Switch>
             <Route exact path = "/" component = {HomePage} />
-            <Route exact path = "/all-books" component = {BooksListPage} />
+            <Route exact path = "/register" component = {Register} />
+            <Route exact path = "/login" component = {Login} />
+            <Route exact path = "/all-books/:user_id" component = {BooksListPage} />
             <Route exact path = "/add-books" component = {AddBookPage} />
             <Route  path = "/update-book/:book_id" component = {UpdateBook} />
             <Route  path = "/my-cart" component = {MyCart} />

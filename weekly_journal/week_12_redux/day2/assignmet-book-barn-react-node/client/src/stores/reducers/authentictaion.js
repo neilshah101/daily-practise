@@ -14,7 +14,8 @@ const reducer = (state = initialState, action) => {
         case 'LOGIN': 
             return {
                 ...state, 
-                isAuthenticated: true 
+                isAuthenticated: true
+                
             }
         case 'LOGOUT': {
             return {

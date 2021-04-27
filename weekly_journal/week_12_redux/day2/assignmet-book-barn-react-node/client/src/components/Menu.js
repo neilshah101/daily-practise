@@ -15,7 +15,7 @@ export class Menu extends Component {
                     <button><NavLink to= "/">Home</NavLink></button>
                 </div>
                 {this.props.isLoggedIn ?<div>
-                    <button><NavLink to= "/all-books">All-Books</NavLink></button>
+                    <button><NavLink to= "/all-books/:user_id">All-Books</NavLink></button>
                 </div>:null}
                 {this.props.isLoggedIn ?<div>
                     <button><NavLink to= "/add-books">Add-Books</NavLink></button>
@@ -24,10 +24,13 @@ export class Menu extends Component {
                     <button><NavLink to= "/my-cart">My-Cart</NavLink></button>
                 </div>:null}
                 {this.props.isLoggedIn ?<div>
-                    <button><NavLink to= "/my-favorite-book">My-Favorite</NavLink></button>
+                    <button ><NavLink to= "/my-favorite-book">My-Favorite</NavLink></button>
                 </div>:null}
                 {!this.props.isLoggedIn ?<div>
-                    <button onClick = {() => this.props.onLogin()}>Login</button>
+                    <button><a href="/register">Register</a></button>
+                </div>:null}
+                {!this.props.isLoggedIn ?<div>
+                    <button onClick = {() => this.props.onLogin()}><a href="/login">Login</a></button>
                 </div>:null}
                 {this.props.isLoggedIn ?<div>
                     <button onClick = {() => this.props.onLogout()}><NavLink to= "/">Logout</NavLink></button>
@@ -39,7 +42,7 @@ export class Menu extends Component {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onLogin: () => dispatch({type: 'LOGIN'}), 
+        
         onLogout: () => dispatch({type: 'LOGOUT'})
     }
 }

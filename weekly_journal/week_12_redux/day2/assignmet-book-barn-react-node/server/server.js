@@ -2,6 +2,9 @@ const express = require('express')
 const cors = require('cors')
 const app = express() 
 const pgp = require('pg-promise')()
+const jwt = require('jsonwebtoken')
+var bcrypt = require('bcryptjs')
+const fetch = require('node-fetch')
 const connectionString = 'postgres://localhost:5432/booksreactdb'
 const db = pgp(connectionString)
 
@@ -9,13 +12,39 @@ app.use(cors())
 app.use(express.json())
 
 
-app.get('/all-books', (req, res) => {
+app.get('/all-books/:user_id', (req, res) => {
+    const user_id = req.params.user_id
+    let headers = req.headers['authorization']
+    if(headers) {
+        const token = headers.split(' ')[1]
+        const decoded = jwt.verify(token, 'ITSSUPERSECRET')
+        if(decoded) {
+            const username = decoded.username 
+            db.one('SELECT  username FROM users WHERE username = $1', [username])
+            .then ((user) => {
+                if(user) {
+                    // console.log(authUser)
+                    db.any('SELECT book_id, title, genre, publisher, year, imagelink FROM books WHERE user_id= $1',[user_id])
+                        .then((books) => {
+                            console.log(books)
+                            res.json(books)
+                })
+                
+                } else {
+                    res.json({error: 'Unable to authenticate'})
+                }
+
+            })
+            
+        } else {
+            res.json({error: 'Unable to authenticate'})
+        }
+    } else {
+        res.json({error: 'Required headers are missing...'})
+    }  
 
 
-    db.any('SELECT book_id, title, genre, publisher, year, imagelink FROM books')
-        .then(book => {
-            res.json(book)
-        })
+    
 })
 
 app.post('/add-book', (req, res) => {
@@ -61,9 +90,59 @@ app.put('/update-book/:book_id', (req, res) => {
 
 })
 
+app.post('/register', (req, res) => {
+
+    const username = req.body.username;
+    const password = req.body.password;
+    const email = req.body.email ;
+    
+
+    bcrypt.genSalt(10, (error, salt) => {
+        bcrypt.hash(password, salt, (err, hash) => {
+            if (!error) {
+                db.none('INSERT INTO users(username, password, email) VALUES($1, $2, $3)', [username, hash, email])
+                    .then(() => {
+                        res.json({sucess: true, message : "user has been added "})
+                    })
+            }
+        })
+    })
+})
+
+
+app.post('/login', (req, res) => {
+
+    const username = req.body.username;
+    const password = req.body.password;
+
+    db.one('SELECT user_id, username, password FROM users WHERE username = $1', [username])
+        .then((user) => {
+            bcrypt.compare(password, user.password, function(error, result) {
+                if (result) {
+                    const token = jwt.sign({ username: username }, 'ITSSUPERSECRET')
+                    res.json({success: true, token: token, username: username, user_id:user.user_id })
+
+                } else {
+                    res.json({success: false, message: "invalid username or password"})
+                }
+            })
+
+        }).catch((error) => {
+            console.log(error)
+            res.send('User not found!')
+        })
+
+})
 
 
 
 app.listen(8080, () => {
     console.log('Server is running...')
 })
+
+
+
+
+
+
+

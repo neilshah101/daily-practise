@@ -21,8 +21,21 @@ class BooksListPage extends Component {
     }
 
     getAllBooks = () =>{
-        //change the api here to get all books
-        fetch('http://localhost:8080/all-books')
+       
+        const token = localStorage.getItem('jsonwebtoken')
+        const username = localStorage.getItem('username')
+        const user_id = localStorage.getItem('user_id')
+
+
+        fetch(`http://localhost:8080/all-books/${user_id}`,{
+            method: 'GET', 
+            params:{
+                user_id: user_id
+            },
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        })
         .then(response => response.json())
         .then (books => {
             this.setState({
