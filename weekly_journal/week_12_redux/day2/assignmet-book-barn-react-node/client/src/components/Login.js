@@ -30,6 +30,7 @@ function Login(props) {
                 localStorage.setItem("username", result.username)
                 localStorage.setItem("user_id", result.user_id)
                 props.history.push(`/all-books/${result.user_id}`)
+                props.onLogin()
             }
         })
     }

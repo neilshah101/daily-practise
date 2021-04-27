@@ -5,6 +5,7 @@ const pgp = require('pg-promise')()
 const jwt = require('jsonwebtoken')
 var bcrypt = require('bcryptjs')
 const fetch = require('node-fetch')
+const authenticate = require('./authMiddleware')
 const connectionString = 'postgres://localhost:5432/booksreactdb'
 const db = pgp(connectionString)
 
@@ -12,37 +13,12 @@ app.use(cors())
 app.use(express.json())
 
 
-app.get('/all-books/:user_id', (req, res) => {
+app.get('/all-books/:user_id', authenticate , (req, res) => {
     const user_id = req.params.user_id
-    let headers = req.headers['authorization']
-    if(headers) {
-        const token = headers.split(' ')[1]
-        const decoded = jwt.verify(token, 'ITSSUPERSECRET')
-        if(decoded) {
-            const username = decoded.username 
-            db.one('SELECT  username FROM users WHERE username = $1', [username])
-            .then ((user) => {
-                if(user) {
-                    // console.log(authUser)
-                    db.any('SELECT book_id, title, genre, publisher, year, imagelink FROM books WHERE user_id= $1',[user_id])
-                        .then((books) => {
-                            console.log(books)
-                            res.json(books)
-                })
-                
-                } else {
-                    res.json({error: 'Unable to authenticate'})
-                }
-
-            })
-            
-        } else {
-            res.json({error: 'Unable to authenticate'})
-        }
-    } else {
-        res.json({error: 'Required headers are missing...'})
-    }  
-
+    db.any('SELECT book_id, title, genre, publisher, year, imagelink FROM books WHERE user_id= $1',[user_id])
+        .then((books) => {
+            res.json(books)
+        })
 
     
 })
@@ -132,6 +108,7 @@ app.post('/login', (req, res) => {
             res.send('User not found!')
         })
 
+        .0
 })
 
 
@@ -146,3 +123,4 @@ app.listen(8080, () => {
 
 
 
+// 'SELECT  username FROM users WHERE username = $1', [username]

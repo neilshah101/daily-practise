@@ -15,6 +15,7 @@ class BookList extends Component{
 
     render() {
         const books = this.props.books
+        console.log("get all booklist function is fired")
         console.log(books)
         const bookItems = books.map((book , index) => {
             return <div  key = {book.book_id} className="card" style={{width: "18rem"}}>
