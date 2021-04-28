@@ -26,11 +26,12 @@ function Login(props) {
             if(result.success) {
                 const token = result.token 
                 console.log(token)
+                props.onLogin()
                 localStorage.setItem("jsonwebtoken", token)
                 localStorage.setItem("username", result.username)
                 localStorage.setItem("user_id", result.user_id)
                 props.history.push(`/all-books/${result.user_id}`)
-                props.onLogin()
+                // props.onLogin()
             }
         })
     }

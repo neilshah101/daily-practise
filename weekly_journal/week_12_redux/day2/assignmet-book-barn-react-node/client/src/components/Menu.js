@@ -2,8 +2,6 @@ import { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { connect } from 'react-redux'
 
-
-
 export class Menu extends Component {
     render() {
         return (
@@ -11,6 +9,7 @@ export class Menu extends Component {
                 <div>
                     <h1>Book Barn</h1>
                 </div>
+                 
                 <div>
                     <button><NavLink to= "/">Home</NavLink></button>
                 </div>
@@ -40,6 +39,8 @@ export class Menu extends Component {
     }
 }
 
+
+
 const mapDispatchToProps = (dispatch) => {
     return {
         
@@ -53,3 +54,11 @@ const mapStateToProps = (state) => {
 }
 
 export const ConnectedMenu = connect(mapStateToProps, mapDispatchToProps)(Menu);
+
+
+
+
+
+
+
+

@@ -9,6 +9,9 @@ const authenticate = require('./authMiddleware')
 const connectionString = 'postgres://localhost:5432/booksreactdb'
 const db = pgp(connectionString)
 
+require('dotenv').config({path: '.env'})
+
+
 app.use(cors())
 app.use(express.json())
 
@@ -95,7 +98,7 @@ app.post('/login', (req, res) => {
         .then((user) => {
             bcrypt.compare(password, user.password, function(error, result) {
                 if (result) {
-                    const token = jwt.sign({ username: username }, 'ITSSUPERSECRET')
+                    const token = jwt.sign({ username: username }, process.env.JWT_KEY)
                     res.json({success: true, token: token, username: username, user_id:user.user_id })
 
                 } else {
@@ -113,7 +116,7 @@ app.post('/login', (req, res) => {
 
 
 
-app.listen(8080, () => {
+app.listen(process.env.PORT, () => {
     console.log('Server is running...')
 })
 

@@ -1,5 +1,7 @@
+import axios from "axios"
 import { Component } from "react"
 import BookList from './BookList'
+
 import './BookListPage.css'
 
 
@@ -27,21 +29,19 @@ class BooksListPage extends Component {
         const user_id = localStorage.getItem('user_id')
 
 
-        fetch(`http://localhost:8080/all-books/${user_id}`,{
-            method: 'GET', 
-            params:{
-                user_id: user_id
-            },
-            headers: {
-                'Authorization': `Bearer ${token}`
+        axios.get(`http://localhost:8080/all-books/${user_id}`)
+        .then (response => {
+            console.log(response)
+            if (response.data.error){
+                console.log(response.data.error)
+            }else{
+                this.setState({
+                    books:response.data
+                })
             }
+            
         })
-        .then(response => response.json())
-        .then (books => {
-            this.setState({
-                books:books
-            })
-        })
+        
     }
 
     
